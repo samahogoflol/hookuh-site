@@ -1,5 +1,5 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./slick.css";
+import "./slick-theme.css";
 
 import atom from "../../utils/imgs/bannerImgs/Atom.webp";
 import banner_lostmary_os12000 from "../../utils/imgs/bannerImgs/banner_lostmary_os12000.webp";

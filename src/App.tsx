@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import CleverHeader from "./components/CleverHeader";
 import Footer from "./components/Footer";
 import SimpleSlider from "./components/MainSlider";
+import FastSales from "./components/FastSales";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <CleverHeader />
         <SimpleSlider />
+        <FastSales />
       </div>
       <Footer />
     </>
