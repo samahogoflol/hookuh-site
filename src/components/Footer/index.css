@@ -1,0 +1,7 @@
+.chessboard-black-grey-bg {
+  background-color: #202020; /* Сірий */
+  background-image: linear-gradient(45deg, #242424 25%, transparent 25%, transparent 75%, #242424 75%, #242424),
+    linear-gradient(45deg, #242424 25%, transparent 25%, transparent 75%, #242424 75%, #242424);
+  background-size: 12px 12px; /* Розмір одного "квадрата" */
+  background-position: 0 0, 6px 6px; /* Зміщення для шахового порядку */
+}
