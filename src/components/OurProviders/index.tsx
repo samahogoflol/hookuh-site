@@ -1,7 +1,7 @@
 import logo420 from "../../utils/imgs/delivers/4-201-logo.jpg";
 import astiLogo from "../../utils/imgs/delivers/asti-logo.jpg";
 
-const OurDelivers = () => {
+const OurProviders = () => {
   return (
     <>
       <h2 className="text-center text-4xl font-medium mt-15 mb-10">Виробники тютюну для кальяну</h2>
@@ -35,4 +35,4 @@ const OurDelivers = () => {
   );
 };
 
-export default OurDelivers;
+export default OurProviders;

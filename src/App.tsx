@@ -4,10 +4,11 @@ import Footer from "./components/Footer";
 import SimpleSlider from "./components/MainSlider";
 import FastSales from "./components/FastSales";
 import GoodsSlider from "./components/GoodsSlider";
-import OurDelivers from "./components/OurDelivers";
+import OurDelivers from "./components/OurProviders/index.tsx";
 import ContactWithUs from "./components/ContactWithUs";
 import AboutUs from "./components/AboutUs.tsx";
 import Reviews from "./components/Reviews/index.tsx";
+import Delivery from "./components/Delivery/index.tsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <ContactWithUs />
         <AboutUs />
         <Reviews />
+        <Delivery />
       </div>
       <Footer />
     </>

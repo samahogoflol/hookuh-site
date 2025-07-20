@@ -5,7 +5,7 @@ import whiteLogo from "./../../utils/imgs/logotypes/kalyan_for_everyone_wite.png
 const Footer = () => {
   return (
     <>
-      <footer className=" flex items-center  mt-60 h-110 chessboard-black-grey-bg">
+      <footer className=" flex items-center  mt-20 h-110 chessboard-black-grey-bg">
         <img className="ml-80 mb-55" src={whiteLogo} alt="" width={350} />
         <div className="grid grid-cols-3 gap-30 mb-30 ">
           <section className="text-gray-400">

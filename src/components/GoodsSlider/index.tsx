@@ -32,7 +32,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -41,7 +41,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -50,7 +50,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -59,7 +59,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -68,7 +68,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -77,7 +77,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -86,7 +86,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -95,7 +95,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -104,7 +104,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -113,7 +113,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            <ButtonBuy children="Купити" />
             <ButtonHeart />
           </div>
         </div>
@@ -122,4 +122,4 @@ const NewGoodsSlider = () => {
   );
 };
 
-export default NewGoodsSlider   ;
+export default NewGoodsSlider;
