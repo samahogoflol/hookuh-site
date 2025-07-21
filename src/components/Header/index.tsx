@@ -1,4 +1,4 @@
-import NavItem from "../NavItem";
+import { NavItem } from "../NavItem";
 
 import phoneIcon from "./../../utils/imgs/icons/phone_icon.jpg";
 import heartIcon from "./../../utils/imgs/icons/heart_icon.png";

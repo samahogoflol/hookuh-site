@@ -4,8 +4,8 @@ interface NavItemProps {
   children: React.ReactNode;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ children }) => {
+export const NavItem: React.FC<NavItemProps> = ({ children }) => {
   return <li className="opacity-65 hover:opacity-100 cursor-pointer">{children}</li>;
 };
 
-export default NavItem;
+

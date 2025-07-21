@@ -1,6 +1,6 @@
 import Header from "./components/Header";
-import CleverHeader from "./components/CleverHeader";
 import Footer from "./components/Footer";
+import CleverHeader from "./components/CleverHeader";
 import SimpleSlider from "./components/MainSlider";
 import FastSales from "./components/FastSales";
 import GoodsSlider from "./components/GoodsSlider";
@@ -9,6 +9,7 @@ import ContactWithUs from "./components/ContactWithUs";
 import AboutUs from "./components/AboutUs.tsx";
 import Reviews from "./components/Reviews/index.tsx";
 import Delivery from "./components/Delivery/index.tsx";
+import GoodsPage from "./components/GoodsPage/index.tsx";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
         <Header />
         <CleverHeader />
-        <SimpleSlider />
+        <GoodsPage />
+        {/* <SimpleSlider />
         <FastSales />
         <GoodsSlider />
         <GoodsSlider />
@@ -24,7 +26,7 @@ function App() {
         <ContactWithUs />
         <AboutUs />
         <Reviews />
-        <Delivery />
+        <Delivery /> */}
       </div>
       <Footer />
     </>
