@@ -6,10 +6,11 @@ import FastSales from "./components/FastSales";
 import GoodsSlider from "./components/GoodsSlider";
 import OurDelivers from "./components/OurProviders/index.tsx";
 import ContactWithUs from "./components/ContactWithUs";
-import AboutUs from "./components/AboutUs.tsx";
+import AboutUs from "./components/AboutUs/index.tsx";
 import Reviews from "./components/Reviews/index.tsx";
 import Delivery from "./components/Delivery/index.tsx";
 import GoodsPage from "./components/GoodsPage/index.tsx";
+import ProductSinglePage from "./components/ProductSinglePage/index.tsx";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
         <Header />
         <CleverHeader />
-        <GoodsPage />
-        {/* <SimpleSlider />
+        <ProductSinglePage />
+        {/* <GoodsPage />
+        <SimpleSlider />
         <FastSales />
         <GoodsSlider />
         <GoodsSlider />
