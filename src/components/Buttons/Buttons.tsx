@@ -5,7 +5,7 @@ interface ButtonProps {
 export const ButtonBuy: React.FC<ButtonProps> = ({ children }) => {
   return (
     <>
-      <button className="max-w-55 min-w-25 h-10  bg-black text-white font-medium rounded cursor-pointer ">{children}</button>
+      <button className="max-w-55 min-w-30 h-10  bg-black text-white font-medium rounded cursor-pointer ">{children}</button>
     </>
   );
 };
