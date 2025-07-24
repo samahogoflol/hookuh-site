@@ -12,6 +12,7 @@ import Delivery from "./components/Delivery/index.tsx";
 import GoodsPage from "./components/GoodsPage/index.tsx";
 import ProductSinglePage from "./components/ProductSinglePage/index.tsx";
 import ContactPage from "./components/ContactsPage/index.tsx";
+import { CallBackForm } from "./components/Form/index.tsx";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
         <Header />
         <CleverHeader />
-        <ContactPage />
-        {/* <ProductSinglePage />
+        <CallBackForm />
+        {/* <ContactPage />
+        <ProductSinglePage />
         <GoodsPage />
         <SimpleSlider />
         <FastSales />

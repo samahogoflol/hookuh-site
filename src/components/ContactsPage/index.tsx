@@ -4,7 +4,7 @@ import emailIcon from "../../utils/imgs/icons/email_icon.jpg";
 import instagramIcon from "../../utils/imgs/icons/instagram_icon.svg";
 import googleIcon from "../../utils/imgs/icons/googleIcon.svg";
 
-import { Form } from "../Form";
+import { FormContactPage } from "../Form";
 
 const ContactPage = () => {
   return (
@@ -39,7 +39,7 @@ const ContactPage = () => {
 
         <div>
           <div className="p-10 border-dashed border-4">
-            <Form />
+            <FormContactPage />
           </div>
         </div>
       </div>
