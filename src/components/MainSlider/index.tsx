@@ -1,15 +1,15 @@
 import "./slick.css";
 import "./slick-theme.css";
 
-import atom from "../../utils/imgs/bannerImgs/Atom.webp";
-import banner_lostmary_os12000 from "../../utils/imgs/bannerImgs/banner_lostmary_os12000.webp";
-import banner_vapeshot from "../../utils/imgs/bannerImgs/banner_vapeshot.webp";
-import gedonist from "../../utils/imgs/bannerImgs/gedonist.webp";
-import hqd_10ml from "../../utils/imgs/bannerImgs/hqd_10ml.webp";
-import jibiar_50g from "../../utils/imgs/bannerImgs/jibiar_50g.webp";
-import katana_20000 from "../../utils/imgs/bannerImgs/katana_20000.webp";
-import molfar_liquid from "../../utils/imgs/bannerImgs/molfar_liquid.webp";
-import space_tea from "../../utils/imgs/bannerImgs/space_tea.webp";
+import atom from "../../imgs/bannerImgs/Atom.webp";
+import banner_lostmary_os12000 from "../../imgs/bannerImgs/banner_lostmary_os12000.webp";
+import banner_vapeshot from "../../imgs/bannerImgs/banner_vapeshot.webp";
+import gedonist from "../../imgs/bannerImgs/gedonist.webp";
+import hqd_10ml from "../../imgs/bannerImgs/hqd_10ml.webp";
+import jibiar_50g from "../../imgs/bannerImgs/jibiar_50g.webp";
+import katana_20000 from "../../imgs/bannerImgs/katana_20000.webp";
+import molfar_liquid from "../../imgs/bannerImgs/molfar_liquid.webp";
+import space_tea from "../../imgs/bannerImgs/space_tea.webp";
 
 import Slider from "react-slick";
 

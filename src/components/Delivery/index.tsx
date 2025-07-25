@@ -1,7 +1,7 @@
-import delivery from "../../utils/imgs/delivery/delivery.png";
-import garanty from "../../utils/imgs/delivery/garanty.png";
-import pay from "../../utils/imgs/delivery/pay.png";
-import returnGood from "../../utils/imgs/delivery/return.png";
+import delivery from "../../imgs/delivery/delivery.png";
+import garanty from "../../imgs/delivery/garanty.png";
+import pay from "../../imgs/delivery/pay.png";
+import returnGood from "../../imgs/delivery/return.png";
 
 const Delivery = () => {
   return (

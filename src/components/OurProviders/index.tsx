@@ -1,5 +1,5 @@
-import logo420 from "../../utils/imgs/delivers/4-201-logo.jpg";
-import astiLogo from "../../utils/imgs/delivers/asti-logo.jpg";
+import logo420 from "../../imgs/delivers/4-201-logo.jpg";
+import astiLogo from "../../imgs/delivers/asti-logo.jpg";
 
 const OurProviders = () => {
   return (

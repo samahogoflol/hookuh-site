@@ -4,7 +4,7 @@ const SelectPagePannel = () => {
   return (
     <>
       <div className="text-center mt-5">
-        <ButtonPagePannel children="1" itFirst={true} />
+        <ButtonPagePannel children="1" />
         <ButtonPagePannel children="2" />
         <ButtonPagePannel children="3" />
         <ButtonPagePannel children="4" />

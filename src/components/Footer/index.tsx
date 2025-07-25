@@ -1,6 +1,6 @@
 import "./index.css";
 
-import whiteLogo from "./../../utils/imgs/logotypes/kalyan_for_everyone_wite.png";
+import whiteLogo from "./../../imgs/logotypes/kalyan_for_everyone_wite.png";
 
 const Footer = () => {
   return (

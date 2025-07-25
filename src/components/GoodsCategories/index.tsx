@@ -1,7 +1,7 @@
-import odnorazki from "../../utils/imgs/veipImg/odnorazki.webp";
-import podSystem from "../../utils/imgs/veipImg/pod-system.webp";
-import kartridze from "../../utils/imgs/veipImg/kartridze.webp";
-import boxMod from "../../utils/imgs/veipImg/box-mod.webp"; 
+import odnorazki from "../../imgs/veipImg/odnorazki.webp";
+import podSystem from "../../imgs/veipImg/pod-system.webp";
+import kartridze from "../../imgs/veipImg/kartridze.webp";
+import boxMod from "../../imgs/veipImg/box-mod.webp";
 
 const GoodsCategories = () => {
   return (

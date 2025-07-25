@@ -5,15 +5,15 @@ import Slider from "react-slick";
 
 import { ButtonBuy, ButtonHeart } from "../Buttons/Buttons";
 
-import lirra_50_gr_usa_potekshy from "../../utils/imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
-import lirra_amsterdam_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_amsterdam_50gr_potekshy.webp";
-import lirra_berry_star_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_berry_star_50gr_potekshy.webp";
-import lirra_crazy_lemon_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_crazy_lemon_50gr_potekshy.webp";
-import lirra_loop_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_loop_50gr_potekshy.webp";
-import lirra_pink_lemonade_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_pink_lemonade_50gr_potekshy.webp";
-import lirra_ruby_crash_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_ruby_crash_50gr_potekshy.webp";
-import lirra_secret_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_secret_50gr_potekshy-.webp";
-import lirra_tropical_punch_50gr_potekshy from "../../utils/imgs/tabaks/lirra/lirra_tropical_punch_50gr_potekshy.webp";
+import lirra_50_gr_usa_potekshy from "../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
+import lirra_amsterdam_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_amsterdam_50gr_potekshy.webp";
+import lirra_berry_star_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_berry_star_50gr_potekshy.webp";
+import lirra_crazy_lemon_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_crazy_lemon_50gr_potekshy.webp";
+import lirra_loop_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_loop_50gr_potekshy.webp";
+import lirra_pink_lemonade_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_pink_lemonade_50gr_potekshy.webp";
+import lirra_ruby_crash_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_ruby_crash_50gr_potekshy.webp";
+import lirra_secret_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_secret_50gr_potekshy-.webp";
+import lirra_tropical_punch_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_tropical_punch_50gr_potekshy.webp";
 
 const NewGoodsSlider = () => {
   var settings = {

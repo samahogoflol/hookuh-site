@@ -4,8 +4,8 @@ import Filters from "../Filters";
 import GoodsCategories from "../GoodsCategories";
 import GoodsList from "../GoodsList";
 
-import vape from "../../utils/imgs/aboutGoods/vape.jpg";
-import electronnaSygareta from "../../utils/imgs/aboutGoods/electronnie-sigarety.jpg";
+import vape from "../../imgs/aboutGoods/vape.jpg";
+import electronnaSygareta from "../../imgs/aboutGoods/electronnie-sigarety.jpg";
 
 const GoodsPage = () => {
   return (

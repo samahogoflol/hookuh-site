@@ -1,11 +1,11 @@
 import { ButtonBuy, ButtonHeart, RoundedButton } from "../Buttons/Buttons";
 import DescriptionTable from "../DescriptionTable";
 
-import tovar from "../../utils/imgs/vapeGoodsList/isparitel_voopoo_pnp_tw20_0.2_om.webp";
-import guaranteeOfQuality from "../../utils/imgs/icons/quality_guarantee.png";
-import discont from "../../utils/imgs/icons/discont.jpg";
-import payment from "../../utils/imgs/icons/payment.jpg";
-import delivery from "../../utils/imgs/icons/delivery.png";
+import tovar from "../../imgs/vapeGoodsList/isparitel_lost_vape_ub_mini_1.0_om.webp";
+import guaranteeOfQuality from "../../imgs/icons/quality_guarantee.png";
+import discont from "../../imgs/icons/discont.jpg";
+import payment from "../../imgs/icons/payment.jpg";
+import delivery from "../../imgs/icons/delivery.png";
 import NewGoodsSlider from "../GoodsSlider";
 
 const productSinglePage = () => {

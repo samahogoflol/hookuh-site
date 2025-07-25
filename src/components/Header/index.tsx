@@ -1,10 +1,10 @@
 import { NavItem } from "../NavItem";
 
-import phoneIcon from "./../../utils/imgs/icons/phone_icon.jpg";
-import heartIcon from "./../../utils/imgs/icons/heart_icon.png";
-import basketIcon from "./../../utils/imgs/icons/basket_icon.jpg";
-import personLogOutIcon from "./../../utils/imgs/icons/person_icon_log_out.png";
-import blackLogo from "./../../utils/imgs/logotypes/kalyan_for_everyone.png";
+import phoneIcon from "./../../imgs/icons/phone_icon.jpg";
+import heartIcon from "./../../imgs/icons/heart_icon.png";
+import basketIcon from "./../../imgs/icons/basket_icon.jpg";
+import personLogOutIcon from "./../../imgs/icons/person_icon_log_out.png";
+import blackLogo from "./../../imgs/logotypes/kalyan_for_everyone.png";
 const Header = () => {
   return (
     <>

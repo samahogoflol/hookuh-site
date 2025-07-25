@@ -1,10 +1,10 @@
-import locationIcon from "../../utils/imgs/icons/location_icon.png";
-import phoneIcon from "../../utils/imgs/icons/phone_icon_for_contacts.jpg";
-import emailIcon from "../../utils/imgs/icons/email_icon.jpg";
-import instagramIcon from "../../utils/imgs/icons/instagram_icon.svg";
-import googleIcon from "../../utils/imgs/icons/googleIcon.svg";
+import locationIcon from "../../imgs/icons/location_icon.png"
+import phoneIcon from "../../imgs/icons/phone_icon.jpg"
+import emailIcon from "../../imgs/icons/email_icon.jpg";
+import instagramIcon from "../../imgs/icons/instagram_icon.svg";
+import googleIcon from "../../imgs/icons/googleIcon.svg";
 
-import { FormContactPage } from "../Form";
+import  FormContactPage  from "../FormContactPage";
 
 const ContactPage = () => {
   return (

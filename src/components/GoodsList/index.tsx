@@ -1,6 +1,6 @@
 import { ButtonBuy, ButtonHeart, ShowMoreGoods } from "../Buttons/Buttons";
 
-import isparitelLostVapeUbMiniOnePoitZeroOm from "../../utils/imgs/vapeGoodsList/isparitel_lost_vape_ub_mini_1.0_om.webp";
+import isparitelLostVapeUbMiniOnePoitZeroOm from "../../imgs/vapeGoodsList/isparitel_lost_vape_ub_mini_1.0_om.webp";
 import SelectPagePannel from "../SelectPagePannel";
 
 const GoodsList = () => {
