@@ -1,6 +1,7 @@
 import { ButtonBuy } from "../Buttons/Buttons";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import type { IForm } from "../../types/form";
+import { validations } from "../../utils/constants";
 
 const FormContactPage: React.FC<IForm> = () => {
   const { register, handleSubmit, formState } = useForm<IForm>({
@@ -14,6 +15,8 @@ const FormContactPage: React.FC<IForm> = () => {
   const eMailError = formState.errors["eMail"]?.message;
   const nameError = formState.errors["name"]?.message;
 
+  const { name, nameErrorMessage, email, emailErrorMessage } = validations;
+
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5 text-center ">
@@ -25,8 +28,8 @@ const FormContactPage: React.FC<IForm> = () => {
           {...register("name", {
             required: "Обов'язкове поле",
             pattern: {
-              value: /^[a-zA-Zа-яА-ЯіІїЇєЄґҐ' -]+$/,
-              message: "Ім'я може містити лише літери, пробіли, дефіси та апострофи.",
+              value: name,
+              message: nameErrorMessage,
             },
           })}
         />
@@ -38,8 +41,8 @@ const FormContactPage: React.FC<IForm> = () => {
           {...register("eMail", {
             required: "Обов'язкове поле",
             pattern: {
-              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-              message: "Введіть коректний емейл",
+              value: email,
+              message: emailErrorMessage,
             },
           })}
         />
@@ -58,4 +61,3 @@ const FormContactPage: React.FC<IForm> = () => {
 };
 
 export default FormContactPage;
-

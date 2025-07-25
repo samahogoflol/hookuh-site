@@ -1,8 +1,10 @@
-import type { IForm } from "../../types/form";
+import type { IForm } from "../../types/form.js";
 import { useForm, type SubmitHandler } from "react-hook-form";
-import { nameValidation } from "../../utils/constants.js";
+import { validations } from "../../utils/constants.js";
 
-const CallBackForm: React.FC<IForm> = () => {
+import blackLogo from "./../../imgs/logotypes/kalyan_for_everyone.png";
+
+const FormCallBack: React.FC<IForm> = () => {
   const { register, handleSubmit, formState } = useForm<IForm>({
     mode: "onChange",
   });
@@ -14,11 +16,12 @@ const CallBackForm: React.FC<IForm> = () => {
   const nameError = formState.errors["name"]?.message;
   const telError = formState.errors["tel"]?.message;
 
-  const { value, message } = nameValidation;
+  const { name, nameErrorMessage, phoneNumber, phoneNumberErrorMessage } = validations;
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="w-90 text-center p-2">
+    <form onSubmit={handleSubmit(onSubmit)} className="w-90 text-center p-2 flex flex-col items-center">
       <h2 className="font-medium">Залиш свої дані та наш менеджер зв’яжеться з тобою протягом 15 хвилин</h2>
+      <img src={blackLogo} alt="Компанія ВІП Кальян" width={100} className="mt-5  flex justify-center" />
       <input
         className="w-full mt-5 p-3 h-10 border border-gray-300 rounded outline-none focus:border-blue-400 focus:shadow-md focus:shadow-blue-200 transition-all duration-200 ease-in-out "
         type="text"
@@ -26,8 +29,8 @@ const CallBackForm: React.FC<IForm> = () => {
         {...register("name", {
           required: "Обов'язкове поле",
           pattern: {
-            value: value,
-            message: message,
+            value: name,
+            message: nameErrorMessage,
           },
         })}
       />
@@ -39,8 +42,8 @@ const CallBackForm: React.FC<IForm> = () => {
         {...register("tel", {
           required: "Обов'язкове поле",
           pattern: {
-            value: /^(?:\+380|0)\d{9}$|^(?:\+380|0)\d{2}[- ]?\d{3}[- ]?\d{2}[- ]?\d{2}$/,
-            message: "Введіть коректний номер телефону (наприклад, +380XXXXXXXXX або 0XXXXXXXXX)",
+            value: phoneNumber,
+            message: phoneNumberErrorMessage,
           },
           minLength: {
             value: 10,
@@ -58,4 +61,4 @@ const CallBackForm: React.FC<IForm> = () => {
   );
 };
 
-export default CallBackForm;
+export default FormCallBack;
