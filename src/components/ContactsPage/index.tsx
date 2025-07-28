@@ -1,10 +1,10 @@
-import locationIcon from "../../imgs/icons/location_icon.png"
-import phoneIcon from "../../imgs/icons/phone_icon.jpg"
+import locationIcon from "../../imgs/icons/location_icon.png";
+import phoneIcon from "../../imgs/icons/phone_icon.jpg";
 import emailIcon from "../../imgs/icons/email_icon.jpg";
 import instagramIcon from "../../imgs/icons/instagram_icon.svg";
 import googleIcon from "../../imgs/icons/googleIcon.svg";
 
-import  FormContactPage  from "../FormContactPage";
+import FormContactPage from "../FormContactPage";
 
 const ContactPage = () => {
   return (
@@ -37,11 +37,16 @@ const ContactPage = () => {
           </div>
         </div>
 
-        <div>
-          <div className="p-10 border-dashed border-4">
-            <FormContactPage />
-          </div>
+        <div className="p-10 border-dashed border-4">
+          <FormContactPage />
         </div>
+      </div>
+      <div>
+        <iframe
+        className="mt-10 w-full h-150"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476.72981455673187!2d30.946496875878335!3d50.35850228082856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e96cc8992493%3A0x3fd1cb675f181538!2sL-Beauty!5e0!3m2!1sen!2sua!4v1753689051327!5m2!1sen!2sua"
+          loading="lazy"
+        ></iframe>
       </div>
     </>
   );
