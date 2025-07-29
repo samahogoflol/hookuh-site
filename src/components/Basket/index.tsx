@@ -15,7 +15,6 @@ const Basket = () => {
         <div className="flex items-center gap-10 px-5">
           <img src={lirra_50_gr_usa_potekshy} alt="" width={50} />
           <h3>Тютюн Daim Lemonade (Лимонад) 50гр</h3>
-          <div>counter</div>
           <h3>price</h3>
           <button>delete</button>
         </div>
