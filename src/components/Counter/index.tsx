@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import store, { type DecrementAction, type IncrementAction } from "../../store";
 
 const Counter = () => {
