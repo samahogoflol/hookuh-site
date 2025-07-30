@@ -36,3 +36,4 @@ const reducer = (state = initialState, action: Action): State => {
 export default configureStore({
   reducer: reducer,
 });
+
