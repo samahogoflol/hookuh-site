@@ -1,199 +1,29 @@
-import { ButtonBuy, ButtonHeart, ShowMoreGoods } from "../Buttons/Buttons";
+import { ButtonBuy, ButtonHeart } from "../Buttons/Buttons";
+import { staticProducts } from "../../data/products";
 
-import isparitelLostVapeUbMiniOnePoitZeroOm from "../../imgs/vapeGoodsList/isparitel_lost_vape_ub_mini_1.0_om.webp";
-import SelectPagePannel from "../SelectPagePannel";
+
 
 const GoodsList = () => {
   return (
     <>
-      <div className="grid grid-cols-4 mt-5">
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
+      {staticProducts.map((item) => {
+        return (
+          <div className="">
+            <div className="w-70 min-h-110 max-h-120 font-bold text-center flex flex-col items-center p-2 border border-gray-100 border-t-white">
+              <img className="" src={item.imgURL} width={220} alt="" />
+              <h2 className="h-25">
+                {item.brand}
+                {item.name}
+              </h2>
+              <span className="text-[1.1rem]">{item.price}₴</span>
+              <div className="flex justify-center items-center ml-5">
+                <ButtonBuy children="Купити" />
+                <ButtonHeart />
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-        <div className="w-70 p-5 text-center items-center border-2 border-gray-100 border-t-white">
-          <img src={isparitelLostVapeUbMiniOnePoitZeroOm} alt="" width={220} />
-          <h2>Змінний Випарювач VooPoo PnP-TM2 Mesh Coil 0.8 OM</h2>
-          <span>105₴</span>
-          <div className="flex justify-center items-center ml-5">
-            <ButtonBuy children="Купити" />
-            <ButtonHeart />
-          </div>
-        </div>
-      </div>
-      <div className="text-center mt-5">
-        <ShowMoreGoods children="Показати ще 20 товарів" />
-      </div>
-      <div>
-        <SelectPagePannel />
-      </div>
+        );
+      })}
     </>
   );
 };

@@ -4,6 +4,9 @@ import Filters from "../Filters";
 import GoodsCategories from "../GoodsCategories";
 import GoodsList from "../GoodsList";
 
+import SelectPagePannel from "../SelectPagePannel";
+import { ShowMoreGoods } from "../Buttons/Buttons";
+
 import vape from "../../imgs/aboutGoods/vape.jpg";
 import electronnaSygareta from "../../imgs/aboutGoods/electronnie-sigarety.jpg";
 
@@ -12,13 +15,22 @@ const GoodsPage = () => {
     <>
       <h2 className="text-center text-3xl font-medium mt-10 mb-10">Електронні сигарети</h2>
       <div className="grid grid-cols-[250px_1fr] gap-x-7">
-        <div className="col-span-1">
+        <div>
           <Filters />
         </div>
-        <div className="flex flex-col">
+        <div>
           <GoodsCategories />
-          <GoodsList />
+          <div className="grid grid-cols-4 mt-5">
+            <GoodsList />
+          </div>
         </div>
+      </div>
+
+      <div className="text-center mt-5">
+        <ShowMoreGoods children="Показати ще 20 товарів" />
+      </div>
+      <div>
+        <SelectPagePannel />
       </div>
 
       <Delivery />

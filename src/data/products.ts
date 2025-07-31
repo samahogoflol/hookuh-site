@@ -14,7 +14,7 @@ import type { Product } from "../types/product";
 export const staticProducts: Product[] = [
   {
     id: "0",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Apple Bears (Яблучні Ведмедики)",
     line: "Light Line",
     imgURL: appleBearsLightLine,
@@ -36,7 +36,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "1",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Orange, Mango (Апельсин, Манго)",
     line: "Light Line",
     imgURL: orangeMangoLightLine,
@@ -60,7 +60,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "2",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Ice, Lemon, Rasberry (Лід, Лимон, Малина)",
     line: "Light Line",
     imgURL: iceLemonRasberryLightLine,
@@ -84,7 +84,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "3",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Ice, Lemon, Mint (Лід, Лимон, Mint)",
     line: "Light Line",
     imgURL: iceLemonMintLightLine,
@@ -108,7 +108,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "4",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Berry Morse (Ягідний Морс)",
     line: "Light Line",
     imgURL: berryMorse,
@@ -132,7 +132,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "5",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Blueberry Muffin (Чорничний Мафін)",
     line: "Light Line",
     imgURL: blueberryMuffin,
@@ -156,7 +156,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "6",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Skittles (Скіттлс)",
     line: "Light Line",
     imgURL: skittles,
@@ -180,7 +180,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "7",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Lemon-Honey Holls (Лимонно-Медовий Холлс)",
     line: "Light Line",
     imgURL: lemonHoneyHolls,
@@ -204,7 +204,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "8",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Strawberry Milpheus (Полуничний Мільфей)",
     line: "Light Line",
     imgURL: strawberryMilpheus,
@@ -228,7 +228,7 @@ export const staticProducts: Product[] = [
   },
   {
     id: "9",
-    brand: "420(Чотири Двадцять)",
+    brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
     imgURL: grapeMint,

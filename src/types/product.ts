@@ -1,12 +1,13 @@
 export interface Product {
-  id: string;
-  brand: string;
-  name: string;
+  id?: string;
+  brand?: string;
+  name?: string;
   line?: string;
   description?: string;
   imgURL?: string;
-  price: number;
-  having: boolean;
+  price?: number;
+  having?: boolean;
+  quantity?: number;
   about?: {
     country?: string;
     sweet?: number;
