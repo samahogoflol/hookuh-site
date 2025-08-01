@@ -1,5 +1,6 @@
 import lirra_50_gr_usa_potekshy from "../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
-import { ButtonBuy, ShowMoreGoods } from "../Buttons/Buttons";
+import ButtonBuy from "../Buttons/BtnBuy";
+import { ShowMoreGoods } from "../Buttons/Buttons";
 
 const Basket = () => {
   return (
@@ -69,8 +70,8 @@ const Basket = () => {
         </div>
 
         <div className="flex justify-between mt-5 mb-5 px-5">
-          <ShowMoreGoods children="Назад до покупок" />
-          <ButtonBuy children="Перейти до кошику" />
+          <ShowMoreGoods />
+          <ButtonBuy />
         </div>
       </div>
     </>

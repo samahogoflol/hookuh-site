@@ -5,7 +5,7 @@ import GoodsCategories from "../GoodsCategories";
 import GoodsList from "../GoodsList";
 
 import SelectPagePannel from "../SelectPagePannel";
-import { ShowMoreGoods } from "../Buttons/Buttons";
+import ShowMoreGoods from "../Buttons/BtnShowMoreProducts";
 
 import vape from "../../imgs/aboutGoods/vape.jpg";
 import electronnaSygareta from "../../imgs/aboutGoods/electronnie-sigarety.jpg";
@@ -27,7 +27,7 @@ const GoodsPage = () => {
       </div>
 
       <div className="text-center mt-5">
-        <ShowMoreGoods children="Показати ще 20 товарів" />
+        <ShowMoreGoods />
       </div>
       <div>
         <SelectPagePannel />

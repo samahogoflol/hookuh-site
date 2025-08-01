@@ -1,4 +1,4 @@
-import { ButtonBuy } from "../Buttons/Buttons";
+import ButtonBuy from "../Buttons/BtnBuy";
 
 const FormLeaveReview = () => {
   return (
@@ -19,7 +19,7 @@ const FormLeaveReview = () => {
             placeholder="Ваш відгук"
           ></textarea>
           <div className=" flex justify-end mt-5">
-            <ButtonBuy children="Залишити відгук" />
+            <ButtonBuy />
           </div>
         </form>
       </div>

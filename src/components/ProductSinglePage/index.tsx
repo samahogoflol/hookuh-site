@@ -1,4 +1,6 @@
-import { ButtonBuy, ButtonHeart, RoundedButton } from "../Buttons/Buttons";
+import RoundedButton from "../Buttons/BtnRounded";
+import ButtonHeart from "../Buttons/BtnHeart";
+import ButtonBuy from "../Buttons/BtnBuy";
 import DescriptionTable from "../DescriptionTable";
 
 import tovar from "../../imgs/vapeGoodsList/isparitel_lost_vape_ub_mini_1.0_om.webp";
@@ -33,7 +35,7 @@ const productSinglePage = () => {
           </div>
           <div className="flex mt-2 items-center">
             <p className="text-green-500 font-medium mr-40">На складі</p>
-            <ButtonBuy children="Купити" />
+            <ButtonBuy />
             <ButtonHeart />
           </div>
           <div>

@@ -1,16 +1,16 @@
-import { ButtonPagePannel } from "../Buttons/Buttons";
+import BtnPagePannel from "../Buttons/BtnPagePannel";
 
 const SelectPagePannel = () => {
   return (
     <>
       <div className="text-center mt-5">
-        <ButtonPagePannel children="1" />
-        <ButtonPagePannel children="2" />
-        <ButtonPagePannel children="3" />
-        <ButtonPagePannel children="4" />
-        <ButtonPagePannel children="6" />
-        <ButtonPagePannel children="..." />
-        <ButtonPagePannel children="109" />
+        <BtnPagePannel children="1" />
+        <BtnPagePannel children="2" />
+        <BtnPagePannel children="3" />
+        <BtnPagePannel children="4" />
+        <BtnPagePannel children="6" />
+        <BtnPagePannel children="..." />
+        <BtnPagePannel children="109" />
       </div>
     </>
   );

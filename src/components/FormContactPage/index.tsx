@@ -1,4 +1,4 @@
-import { ButtonBuy } from "../Buttons/Buttons";
+import ButtonBuy from "../Buttons/BtnBuy";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import type { IForm } from "../../types/form";
 import { validations } from "../../utils/constants";
@@ -53,7 +53,7 @@ const FormContactPage: React.FC<IForm> = () => {
           minLength={10}
         ></textarea>
         <div className="items-center">
-          <ButtonBuy children="Відправити" />
+          <ButtonBuy />
         </div>
       </form>
     </>
