@@ -4,7 +4,7 @@ import "./slick-theme.css";
 import Slider from "react-slick";
 
 import ButtonHeart from "../Buttons/BtnHeart";
-import ButtonBuy from "../Buttons/BtnBuy";
+import ButtonBuy from "../Buttons/BtnAddItemToCart";
 
 import lirra_50_gr_usa_potekshy from "../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
 import lirra_amsterdam_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_amsterdam_50gr_potekshy.webp";

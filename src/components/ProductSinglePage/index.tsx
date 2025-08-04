@@ -1,6 +1,6 @@
 import RoundedButton from "../Buttons/BtnRounded";
 import ButtonHeart from "../Buttons/BtnHeart";
-import ButtonBuy from "../Buttons/BtnBuy";
+import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
 import DescriptionTable from "../DescriptionTable";
 
 import tovar from "../../imgs/vapeGoodsList/isparitel_lost_vape_ub_mini_1.0_om.webp";
@@ -9,6 +9,7 @@ import discont from "../../imgs/icons/discont.jpg";
 import payment from "../../imgs/icons/payment.jpg";
 import delivery from "../../imgs/icons/delivery.png";
 import NewGoodsSlider from "../GoodsSlider";
+import { staticProducts } from "../../data/products";
 
 const productSinglePage = () => {
   return (
@@ -35,7 +36,6 @@ const productSinglePage = () => {
           </div>
           <div className="flex mt-2 items-center">
             <p className="text-green-500 font-medium mr-40">На складі</p>
-            <ButtonBuy />
             <ButtonHeart />
           </div>
           <div>

@@ -1,4 +1,4 @@
-import ButtonBuy from "../Buttons/BtnBuy";
+import ButtonBuy from "../Buttons/BtnAddItemToCart";
 
 const FormLeaveReview = () => {
   return (

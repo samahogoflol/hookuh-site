@@ -8,4 +8,5 @@ export interface CartState {
   items: ItemCart[];
   totalPrice: number;
   totalQuantity: number;
+  totalDiscount: number;
 }

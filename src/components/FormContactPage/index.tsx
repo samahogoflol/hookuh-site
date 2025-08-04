@@ -1,4 +1,4 @@
-import ButtonBuy from "../Buttons/BtnBuy";
+import ButtonBuy from "../Buttons/BtnAddItemToCart";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import type { IForm } from "../../types/form";
 import { validations } from "../../utils/constants";

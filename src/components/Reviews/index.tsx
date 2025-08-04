@@ -1,5 +1,5 @@
 import lirra_crazy_lemon_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
-import ButtonBuy from "../Buttons/BtnBuy";
+import ButtonBuy from "../Buttons/BtnAddItemToCart";
 
 const Reviews = () => {
   return (

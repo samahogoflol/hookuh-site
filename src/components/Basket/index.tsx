@@ -1,79 +1,93 @@
-import lirra_50_gr_usa_potekshy from "../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
-import ButtonBuy from "../Buttons/BtnBuy";
-import { ShowMoreGoods } from "../Buttons/Buttons";
+import type React from "react";
+import type { RootState } from "../../store";
+import type { Product } from "../../types/product";
+import { useSelector } from "react-redux";
+import BtnShowMoreProducts from "../Buttons/BtnShowMoreProducts";
+import BtnClose from "../Buttons/BtnClose";
+import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
+import Counter from "../Counter";
+import BtnRemoveItem from "../Buttons/BtnRemoveItem";
 
-const Basket = () => {
+const Basket: React.FC<Product> = () => {
+  const { items, totalQuantity, totalPrice, totalDiscount } = useSelector((state: RootState) => state.cart);
+
+  const getQuantityText = (quantity: number): string => {
+    const lastTwoDigits = quantity % 100;
+    const lastDigit = quantity % 10;
+
+    if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
+      return "товарів";
+    }
+    if (lastDigit === 1) {
+      return "товар";
+    }
+    if (lastDigit >= 2 && lastDigit <= 4) {
+      return "товарa";
+    }
+    return "товарів";
+  };
+
+  const quantityText = getQuantityText(totalQuantity);
+
   return (
     <>
-      <div className="min-h-35 max-h-130 w-200 border border-gray-200">
-        <div className="bg-gray-100 w-full h-10 flex items-center justify-between mb-5">
-          <span className="ml-8">У кошику "" товара</span>
-          <div className="h-10 w-20 text-[1.3rem] text-center font-medium hover:bg-white">
-            <button>x</button>
+      {items.length === 0 ? (
+        <div className="min-h-40 max-h-130 w-200 border border-gray-200 text-center">
+          <div className="bg-gray-100 w-full h-10 flex items-center justify-between mb-5 ">
+            <p className="p-5">Корзина покупок</p>
+            <BtnClose />
+          </div>
+
+          <p>Кошик порожній</p>
+          <div className="flex justify-start p-5">
+            <BtnShowMoreProducts />
           </div>
         </div>
+      ) : (
+        <div className="min-h-35 max-h-130 w-200 border border-gray-200">
+          <div className="bg-gray-100 w-full h-10 flex items-center justify-between mb-5">
+            <span className="ml-8">
+              У кошику {totalQuantity} {quantityText}
+            </span>
+            <BtnClose />
+          </div>
+          <div className="w-200 max-h-80 overflow-y-auto">
+            {items.map((item) => (
+              <>
+                <div className="flex items-center gap-10 px-5">
+                  <img src={item.imgURL} alt={item.name} width={60} />
+                  <h3 className="w-70">{item.name}</h3>
+                  <Counter itemId={item.id} children={item.quantity} />
+                  <h3>Ціна : {item.price * item.quantity}</h3>
+                  <BtnRemoveItem />
+                </div>
+                <div className="px-5">
+                  <hr className="border-t border-gray-100 mt-3 mb-3" />
+                </div>
+              </>
+            ))}
+          </div>
+          <div className="text-right mt-5 font-medium p-5">
+            <div className="flex ">
+              <p className="w-16/3 text-right">Сума :</p>
+              <p className="w-1/2">{totalPrice}₴</p>
+            </div>
+            {totalPrice >= 1000 ? (
+              <div className="flex ">
+                <p className="w-16/3 text-right">Знижка :</p>
+                <p className="w-1/2">{totalDiscount}</p>
+              </div>
+            ) : null}
 
-        <div className="flex items-center gap-10 px-5">
-          <img src={lirra_50_gr_usa_potekshy} alt="" width={50} />
-          <h3>Тютюн Daim Lemonade (Лимонад) 50гр</h3>
-          <h3>price</h3>
-          <button>delete</button>
+            <div className="flex ">
+              <p className="w-16/3 text-right">Всього :</p>
+              <p className="w-1/2">{totalPrice - totalDiscount}₴</p>
+            </div>
+          </div>
         </div>
-        <div className="px-5">
-          <hr className="border-t border-gray-100 mt-3 mb-3" />
-        </div>
+      )}
 
-        <div className="flex items-center gap-10 px-5">
-          <img src={lirra_50_gr_usa_potekshy} alt="" width={50} />
-          <h3>Тютюн Daim Lemonade (Лимонад) 50гр</h3>
-          <div>counter</div>
-          <h3>price</h3>
-          <button>delete</button>
-        </div>
-
-        <div className="px-5">
-          <hr className="border-t border-gray-100 mt-3 mb-3" />
-        </div>
-
-        <div className="flex items-center gap-10 px-5">
-          <img src={lirra_50_gr_usa_potekshy} alt="" width={50} />
-          <h3>Тютюн Daim Lemonade (Лимонад) 50гр</h3>
-          <div>counter</div>
-          <h3>price</h3>
-          <button>delete</button>
-        </div>
-        <div className="px-5">
-          <hr className="border-t border-gray-100 mt-3 mb-3" />
-        </div>
-
-        <div className="flex items-center gap-10 px-5">
-          <img src={lirra_50_gr_usa_potekshy} alt="" width={50} />
-          <h3>Тютюн Daim Lemonade (Лимонад) 50гр</h3>
-          <div>counter</div>
-          <h3>price</h3>
-          <button>delete</button>
-        </div>
-        <div className="px-5">
-          <hr className="border-t border-gray-100 mt-3 mb-3" />
-        </div>
-
-        <div className="text-right mt-5 font-medium px-5">
-          <p className="mr-3.5">
-            Сума : <span className="ml-10 "> сума""</span>
-          </p>
-          <p className="mr-3.5">
-            Знижка : <span className="ml-10 "> сума""</span>
-          </p>
-          <p>
-            Всього : <span className="ml-10 "> всього""</span>
-          </p>
-        </div>
-
-        <div className="flex justify-between mt-5 mb-5 px-5">
-          <ShowMoreGoods />
-          <ButtonBuy />
-        </div>
-      </div>
+      <div className="flex justify-between mt-5 mb-5 px-5">{/* <BtnAddItemToCart product={} /> */}</div>
     </>
   );
 };
