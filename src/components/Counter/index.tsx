@@ -1,19 +1,25 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { incrementQuantity, decrementQuantity } from "../../modules/cart/cartSlice";
-
+import type { RootState } from "../../store";
 interface CounterProps {
   itemId: string;
-  children: number;
 }
 
-const Counter: React.FC<CounterProps> = ({ itemId, children }) => {
+const Counter: React.FC<CounterProps> = ({ itemId }) => {
+  const quantity = useSelector((state: RootState) => {
+    const item = state.cart.items.find((i) => i.id === itemId);
+    return item ? item.quantity : 0;
+  });
+
   const dispatch = useDispatch();
 
   const onIncrement = () => {
     dispatch(incrementQuantity(itemId));
   };
   const onDecrement = () => {
-    dispatch(decrementQuantity(itemId));
+    if (quantity > 1) {
+      dispatch(decrementQuantity(itemId));
+    }
   };
 
   return (
@@ -26,7 +32,7 @@ const Counter: React.FC<CounterProps> = ({ itemId, children }) => {
           -
         </button>
       </div>
-      <h3>{children}</h3>
+      <h3>{quantity}</h3>
       <div className="relative flex items-center h-5 w-5 bg-gray-200 border border-gray-300 rounded-full">
         <button onClick={onIncrement} className="absolute left-[0.2rem] border border-none text-[1.1rem] font-medium cursor-pointer ">
           +

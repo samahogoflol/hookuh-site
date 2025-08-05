@@ -28,8 +28,6 @@ const basketSlice = createSlice({
       }
       state.totalQuantity += 1;
       state.totalPrice += productToAdd.price;
-
-     
     },
     incrementQuantity: (state, action: PayloadAction<string>) => {
       const itemId = action.payload;

@@ -1,11 +1,16 @@
 import { NavItem } from "../NavItem";
+import { useSelector } from "react-redux";
+import type { RootState } from "../../store";
 
 import phoneIcon from "./../../imgs/icons/phone_icon.jpg";
 import heartIcon from "./../../imgs/icons/heart_icon.png";
 import basketIcon from "./../../imgs/icons/basket_icon.jpg";
 import personLogOutIcon from "./../../imgs/icons/person_icon_log_out.png";
 import blackLogo from "./../../imgs/logotypes/kalyan_for_everyone.png";
+
 const Header = () => {
+  const { totalQuantity } = useSelector((state: RootState) => state.cart);
+
   return (
     <>
       <header className="flex justify-center items-center p-3">
@@ -35,7 +40,10 @@ const Header = () => {
             <img src={heartIcon} alt="Icon" width={30} />
           </div>
           <div className="w-15 h-15 mt-5 ml-2 flex items-center justify-center rounded-md hover:bg-gray-200 hover:rounded cursor-pointer">
-            <img src={basketIcon} alt="" width={30} />
+            <div className="relative">
+              <p className="absolute left-4 bottom-3 text-white text-center h-6 w-6 bg-black rounded-[100%]">{totalQuantity}</p>
+              <img src={basketIcon} alt="" width={30} />
+            </div>
           </div>
           <div className="w-15 h-15 mt-5 ml-2 flex items-center justify-center rounded-md hover:bg-gray-200 hover:rounded cursor-pointer">
             <img src={personLogOutIcon} alt="" width={30} />

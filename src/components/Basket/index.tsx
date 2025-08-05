@@ -1,14 +1,11 @@
-import type React from "react";
 import type { RootState } from "../../store";
-import type { Product } from "../../types/product";
 import { useSelector } from "react-redux";
 import BtnShowMoreProducts from "../Buttons/BtnShowMoreProducts";
 import BtnClose from "../Buttons/BtnClose";
-import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
 import Counter from "../Counter";
 import BtnRemoveItem from "../Buttons/BtnRemoveItem";
 
-const Basket: React.FC<Product> = () => {
+const Basket = () => {
   const { items, totalQuantity, totalPrice, totalDiscount } = useSelector((state: RootState) => state.cart);
 
   const getQuantityText = (quantity: number): string => {
@@ -57,9 +54,11 @@ const Basket: React.FC<Product> = () => {
                 <div className="flex items-center gap-10 px-5">
                   <img src={item.imgURL} alt={item.name} width={60} />
                   <h3 className="w-70">{item.name}</h3>
-                  <Counter itemId={item.id} children={item.quantity} />
+                  <Counter itemId={item.id} />
                   <h3>Ціна : {item.price * item.quantity}</h3>
-                  <BtnRemoveItem />
+                  <div className="px-1">
+                    <BtnRemoveItem id={item.id} />
+                  </div>
                 </div>
                 <div className="px-5">
                   <hr className="border-t border-gray-100 mt-3 mb-3" />
@@ -75,7 +74,7 @@ const Basket: React.FC<Product> = () => {
             {totalPrice >= 1000 ? (
               <div className="flex ">
                 <p className="w-16/3 text-right">Знижка :</p>
-                <p className="w-1/2">{totalDiscount}</p>
+                <p className="w-1/2">{Math.round(totalPrice * 0.02)}₴</p>
               </div>
             ) : null}
 
