@@ -29,7 +29,7 @@ const Basket = () => {
   return (
     <>
       {items.length === 0 ? (
-        <div className="min-h-40 max-h-130 w-200 border border-gray-200 text-center">
+        <div className="min-h-40 max-h-130 w-200 border border-gray-200 text-center bg-white">
           <div className="bg-gray-100 w-full h-10 flex items-center justify-between mb-5 ">
             <p className="p-5">Корзина покупок</p>
             <BtnClose />
@@ -41,7 +41,7 @@ const Basket = () => {
           </div>
         </div>
       ) : (
-        <div className="min-h-35 max-h-130 w-200 border border-gray-200">
+        <div className="min-h-35 max-h-130 w-200 border border-gray-200 bg-white">
           <div className="bg-gray-100 w-full h-10 flex items-center justify-between mb-5">
             <span className="ml-8">
               У кошику {totalQuantity} {quantityText}

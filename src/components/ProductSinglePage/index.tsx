@@ -8,7 +8,7 @@ import guaranteeOfQuality from "../../imgs/icons/quality_guarantee.png";
 import discont from "../../imgs/icons/discont.jpg";
 import payment from "../../imgs/icons/payment.jpg";
 import delivery from "../../imgs/icons/delivery.png";
-import NewGoodsSlider from "../GoodsSlider";
+import NewGoodsSlider from "../NewGoodsSlider";
 import { staticProducts } from "../../data/products";
 
 const productSinglePage = () => {

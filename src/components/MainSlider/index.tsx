@@ -13,11 +13,11 @@ import space_tea from "../../imgs/bannerImgs/space_tea.webp";
 
 import Slider from "react-slick";
 
-const SimpleSlider = () => {
+const MainSlider = () => {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -54,4 +54,4 @@ const SimpleSlider = () => {
   );
 };
 
-export default SimpleSlider;
+export default MainSlider;

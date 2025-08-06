@@ -1,4 +1,4 @@
-const Partnership = () => {
+const PartnershipPage = () => {
   return (
     <>
       <h2 className="text-center text-3xl font-medium mt-10 mb-5">Співпраця з компанією Kalyan For Everyone</h2>
@@ -48,4 +48,4 @@ const Partnership = () => {
   );
 };
 
-export default Partnership;
+export default PartnershipPage;

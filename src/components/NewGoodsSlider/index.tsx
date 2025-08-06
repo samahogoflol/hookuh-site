@@ -4,7 +4,7 @@ import "./slick-theme.css";
 import Slider from "react-slick";
 
 import ButtonHeart from "../Buttons/BtnHeart";
-import ButtonBuy from "../Buttons/BtnAddItemToCart";
+import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
 
 import lirra_50_gr_usa_potekshy from "../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
 import lirra_amsterdam_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_amsterdam_50gr_potekshy.webp";
@@ -33,7 +33,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -42,7 +42,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -51,7 +51,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -60,7 +60,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -69,7 +69,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -78,7 +78,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -87,7 +87,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -96,7 +96,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -105,7 +105,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart  /> */}
             <ButtonHeart />
           </div>
         </div>
@@ -114,7 +114,7 @@ const NewGoodsSlider = () => {
           <p className="mt-5">Тютюн Lirra USA (США) 50гр (ПОТЕКШИЙ)</p>
           <p className="mt-6 font-bold text-[1.2rem]">70₴</p>
           <div className="flex justify-center items-center ml-5">
-            <ButtonBuy />
+            {/* <BtnAddItemToCart product={} /> */}
             <ButtonHeart />
           </div>
         </div>

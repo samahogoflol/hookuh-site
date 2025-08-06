@@ -1,7 +1,7 @@
 import deliverFromNP from "../../imgs/delivery/dostavka-kurer.jpg";
 import deliverSamovyvoz from "../../imgs/delivery/dostavka-samovivos.jpg";
 
-const PaymentAndDelivery = () => {
+const PaymentAndDeliveryPage = () => {
   return (
     <>
       <h2 className="text-center mt-10 text-3xl font-medium">Оплата та доставка</h2>
@@ -57,4 +57,4 @@ const PaymentAndDelivery = () => {
   );
 };
 
-export default PaymentAndDelivery;
+export default PaymentAndDeliveryPage;
