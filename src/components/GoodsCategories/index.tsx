@@ -1,27 +1,14 @@
-import odnorazki from "../../imgs/veipImg/odnorazki.webp";
-import podSystem from "../../imgs/veipImg/pod-system.webp";
-import kartridze from "../../imgs/veipImg/kartridze.webp";
-import boxMod from "../../imgs/veipImg/box-mod.webp";
+import { brandStaticContent } from "../../data/tabakContent";
 
 const GoodsCategories = () => {
   return (
-    <div className=" pl-12 flex w-12/12 h-20 border-2 border-gray-100 gap-10 items-center">
-      <div className="flex items-center h-15 w-55 cursor-pointer hover:bg-gray-100">
-        <img className="w-12 h-12" src={odnorazki} alt="" />
-        <span>Одноразові електронні сигарети</span>
-      </div>
-      <div className="flex items-center w-55 cursor-pointer hover:bg-gray-100">
-        <img className="w-12 h-12" src={podSystem} alt="" />
-        <span>Багаторазові POD системи</span>
-      </div>
-      <div className="flex items-center w-55 cursor-pointer hover:bg-gray-100">
-        <img className="w-12 h-12" src={kartridze} alt="" />
-        <span>Комплектуючі</span>
-      </div>
-      <div className="flex items-center w-55 cursor-pointer hover:bg-gray-100">
-        <img className="w-12 h-12" src={boxMod} alt="" />
-        <span>Бокс моди</span>
-      </div>
+    <div className="grid grid-cols-4 pb-1 pr-5 pl-2 pt-5 border border-gray-200">
+      {brandStaticContent.map((item) => (
+        <div className="flex hover:bg-gray-100 items-center cursor-pointer gap-3 mb-5 ml-3" key={item.id}>
+          <img src={item.imgURL} alt={item.name} width={45} />
+          {item.name}
+        </div>
+      ))}
     </div>
   );
 };

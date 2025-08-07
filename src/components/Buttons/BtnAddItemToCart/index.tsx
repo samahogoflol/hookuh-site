@@ -6,7 +6,6 @@ import ModalWindow from "../../ModalWindow";
 
 interface AddtoCartButtonProps {
   product: Product;
-  onProductAdd: (product: Product) => void;
 }
 
 const BtnAddItemToCart: React.FC<AddtoCartButtonProps> = ({ product }) => {

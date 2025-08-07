@@ -10,6 +10,7 @@ import PartnershipPage from "./pages/PartnershipPage";
 import PaymentAndDeliveryPage from "./pages/PaymentAndDeliveryPage";
 import GoodsList from "./components/GoodsList";
 import GoodsPage from "./components/GoodsPage";
+import TabaccoPage from "./pages/TabaccoPage";
 
 function App() {
   return (
@@ -17,18 +18,20 @@ function App() {
       <Router>
         <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
           <Header />
+
           <CleverHeader />
-          <GoodsPage />
-          <Routes>
+          <TabaccoPage />
+          {/* <GoodsPage /> */}
+          {/* <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/paymentAndDelivery" element={<PaymentAndDeliveryPage />} />
-            {/* <Route path="/actions" element={<Actions></Actions>}></Route> */}
+            <Route path="/actions" element={<Actions></Actions>}></Route>
             <Route path="forPartners" element={<PartnershipPage />} />
             <Route path="forWholesalers" element={<ForWholesalersPage />} />
             <Route path="/contactWithUs" element={<ContactsPage />} />
-          </Routes>
-          <Footer />
+          </Routes> */}
         </div>
+        <Footer />
       </Router>
     </>
   );

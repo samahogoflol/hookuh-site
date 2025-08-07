@@ -1,9 +1,15 @@
+export interface Brand {
+  id: string;
+  name: string;
+  imgURL?: string;
+}
+
 export interface Product {
   id: string;
   brand: string;
   name: string;
   line: string;
-  description?: string; // Це поле може бути опціональним
+  description?: string;
   imgURL?: string;
   price: number;
   having: boolean;

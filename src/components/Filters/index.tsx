@@ -14,10 +14,13 @@ const Filters = () => {
 
         <BtnAccardion children="Країна виробник" />
         <BtnAccardion children="Смак " />
+        <BtnAccardion children="Вага" />
         <BtnAccardion children="Димність " />
+        <BtnAccardion children="Жаростійкість" />
         <BtnAccardion children="Кислість " />
         <BtnAccardion children="Міціність " />
         <BtnAccardion children="Пряність " />
+        <BtnAccardion children="Рекомендована Чаша " />
         <BtnAccardion children="Свіжість " />
         <BtnAccardion children="Сладкість " />
         <BtnAccardion children="Статус наявності " />

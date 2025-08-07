@@ -9,7 +9,7 @@ import discont from "../../imgs/icons/discont.jpg";
 import payment from "../../imgs/icons/payment.jpg";
 import delivery from "../../imgs/icons/delivery.png";
 import NewGoodsSlider from "../NewGoodsSlider";
-import { staticProducts } from "../../data/products";
+import { staticProducts } from "../../data/tabakContent";
 
 const productSinglePage = () => {
   return (
