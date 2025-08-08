@@ -1,14 +1,15 @@
 import BtnPagePannel from "../Buttons/BtnPagePannel";
 
-interface SelectPagePannelProps {
-  onLoad: () => void;
-}
+import { tabakStaticContent } from "../../data/tabakContent";
+import usePagination from "../../customHooks/usePagination";
 
-const SelectPagePannel: React.FC<SelectPagePannelProps> = ({ onLoad }) => {
+const SelectPagePannel = () => {
+  const { onLoadMore } = usePagination(tabakStaticContent, 20);
+
   return (
     <>
       <div className="text-center mt-5">
-        <BtnPagePannel onLoad={onLoad} children="1" />
+        <BtnPagePannel onLoad={onLoadMore} children="1" />
         <BtnPagePannel children="2" />
         <BtnPagePannel children="3" />
         <BtnPagePannel children="4" />

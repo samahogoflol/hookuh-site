@@ -1,15 +1,14 @@
-import type { Product } from "../../types/product";
 import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
 import ButtonHeart from "../Buttons/BtnHeart";
+import usePagination from "../../customHooks/usePagination";
+import { tabakStaticContent } from "../../data/tabakContent";
 
-interface GoodsListProps {
-  products: Product[];
-}
+const GoodsList = () => {
+  const { visibleItems } = usePagination(tabakStaticContent, 20);
 
-const GoodsList: React.FC<GoodsListProps> = ({ products }) => {
   return (
     <>
-      {products.map((item) => {
+      {visibleItems.map((item) => {
         return (
           <div
             key={item.id}
