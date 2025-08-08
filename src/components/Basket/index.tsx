@@ -1,6 +1,5 @@
 import type { RootState } from "../../store";
 import { useSelector } from "react-redux";
-import BtnShowMoreProducts from "../Buttons/BtnShowMoreProducts";
 import BtnClose from "../Buttons/BtnClose";
 import Counter from "../Counter";
 import BtnRemoveItem from "../Buttons/BtnRemoveItem";
@@ -36,9 +35,7 @@ const Basket = () => {
           </div>
 
           <p>Кошик порожній</p>
-          <div className="flex justify-start p-5">
-            <BtnShowMoreProducts />
-          </div>
+          <div className="flex justify-start p-5"></div>
         </div>
       ) : (
         <div className="min-h-35 max-h-130 w-200 border border-gray-200 bg-white">

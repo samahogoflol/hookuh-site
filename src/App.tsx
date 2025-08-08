@@ -9,8 +9,8 @@ import ForWholesalersPage from "./pages/ForWholesalersPage";
 import PartnershipPage from "./pages/PartnershipPage";
 import PaymentAndDeliveryPage from "./pages/PaymentAndDeliveryPage";
 import GoodsList from "./components/GoodsList";
-import GoodsPage from "./components/GoodsPage";
 import TabaccoPage from "./pages/TabaccoPage";
+import ElectronCigarettePage from "./pages/ElectronCigarette";
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
       <Router>
         <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
           <Header />
-
           <CleverHeader />
           <TabaccoPage />
+          {/* <ElectronCigarettePage /> */}
           {/* <GoodsPage /> */}
           {/* <Routes>
             <Route path="/" element={<MainPage />} />

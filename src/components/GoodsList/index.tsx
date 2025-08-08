@@ -1,11 +1,12 @@
 import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
 import ButtonHeart from "../Buttons/BtnHeart";
-import usePagination from "../../customHooks/usePagination";
-import { tabakStaticContent } from "../../data/tabakContent";
+import type { Product } from "../../types/product";
 
-const GoodsList = () => {
-  const { visibleItems } = usePagination(tabakStaticContent, 20);
+interface GoodsListProps {
+  visibleItems: Product[];
+}
 
+const GoodsList: React.FC<GoodsListProps> = ({ visibleItems }) => {
   return (
     <>
       {visibleItems.map((item) => {

@@ -1,15 +1,18 @@
-import BtnShowMoreProducts from "../../components/Buttons/BtnShowMoreProducts";
 import Filters from "../../components/Filters";
 import GoodsCategories from "../../components/GoodsCategories";
 import GoodsList from "../../components/GoodsList";
-import SelectPagePannel from "../../components/SelectPagePannel";
+import PaginationContainer from "../../components/PaginationContainer";
 
 import astiTabacco from "../../imgs/tabaks/asti/tabak_asti_100gr.jpg";
 import skittlesTabacco from "../../imgs/tabaks/420/420_light_100gr_skitls.webp";
 import Delivery from "../../components/Delivery";
 import Acardion from "../../components/Acardion";
+import usePagination from "../../customHooks/usePagination";
+import { tabakStaticContent } from "../../data/tabakContent";
 
 const TabaccoPage = () => {
+  const { visibleItems, hasMore, onLoadMore } = usePagination(tabakStaticContent, 20);
+
   return (
     <>
       <h2 className="text-center mt-10 mb-5 text-3xl font-medium">Тютюн</h2>
@@ -20,14 +23,11 @@ const TabaccoPage = () => {
         <div>
           <GoodsCategories />
           <div className="grid grid-cols-4 mt-3">
-            <GoodsList />
+            <GoodsList visibleItems={visibleItems} />
           </div>
           <div>
-            <div className="flex justify-center text-center mt-5">
-              <BtnShowMoreProducts />
-            </div>
-            <div>
-              <SelectPagePannel />
+            <div className="flex flex-col items-center mt-5">
+              <PaginationContainer hasMore={hasMore} onLoadMore={onLoadMore} visibleItems={visibleItems} />
             </div>
           </div>
         </div>
