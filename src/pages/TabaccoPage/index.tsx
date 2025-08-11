@@ -1,17 +1,17 @@
 import Filters from "../../components/Filters";
 import GoodsCategories from "../../components/GoodsCategories";
 import GoodsList from "../../components/GoodsList";
-import PaginationContainer from "../../components/PaginationContainer";
-
 import astiTabacco from "../../imgs/tabaks/asti/tabak_asti_100gr.jpg";
 import skittlesTabacco from "../../imgs/tabaks/420/420_light_100gr_skitls.webp";
 import Delivery from "../../components/Delivery";
 import Acardion from "../../components/Acardion";
-import usePagination from "../../customHooks/usePagination";
+import useLoadMorePagination from "../../customHooks/usePaginaton";
+
 import { tabakStaticContent } from "../../data/tabakContent";
 
+
 const TabaccoPage = () => {
-  const { visibleItems, hasMore, onLoadMore } = usePagination(tabakStaticContent, 20);
+  const { visibleItems, onLoadMore, hasMore } = useLoadMorePagination(tabakStaticContent, 20);
 
   return (
     <>
@@ -27,7 +27,8 @@ const TabaccoPage = () => {
           </div>
           <div>
             <div className="flex flex-col items-center mt-5">
-              <PaginationContainer hasMore={hasMore} onLoadMore={onLoadMore} visibleItems={visibleItems} />
+              <PaginationLoadMore />
+              <PagePagination />
             </div>
           </div>
         </div>
