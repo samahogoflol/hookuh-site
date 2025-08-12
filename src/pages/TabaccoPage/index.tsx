@@ -5,13 +5,16 @@ import astiTabacco from "../../imgs/tabaks/asti/tabak_asti_100gr.jpg";
 import skittlesTabacco from "../../imgs/tabaks/420/420_light_100gr_skitls.webp";
 import Delivery from "../../components/Delivery";
 import Acardion from "../../components/Acardion";
-import useLoadMorePagination from "../../customHooks/usePaginaton";
+import usePagination from "../../customHooks/usePaginaton";
 
 import { tabakStaticContent } from "../../data/tabakContent";
-
+import PaginationContainer from "../../components/PaginationContainer";
 
 const TabaccoPage = () => {
-  const { visibleItems, onLoadMore, hasMore } = useLoadMorePagination(tabakStaticContent, 20);
+  const { visibleItems, totalPages, currentPage, goToPage, onLoadMore, hasMoreOnCurrentPage, isLastPage } = usePagination(
+    tabakStaticContent,
+    20
+  );
 
   return (
     <>
@@ -27,8 +30,13 @@ const TabaccoPage = () => {
           </div>
           <div>
             <div className="flex flex-col items-center mt-5">
-              <PaginationLoadMore />
-              <PagePagination />
+              <PaginationContainer
+                totalPages={totalPages}
+                currentPage={currentPage}
+                goToPage={goToPage}
+                onLoadMore={onLoadMore}
+                hasMoreOnCurrentPage={hasMoreOnCurrentPage}
+              />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import type { Brand, Product } from "../types/product";
+import type { Product, Brand } from "../types/product";
 
 import appleBearsLightLine from "../imgs/tabaks/420/420_light_100gr_apple_bears.webp";
 import orangeMangoLightLine from "../imgs/tabaks/420/420_light_100gr_apelsin_mango.webp";

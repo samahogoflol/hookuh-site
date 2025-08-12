@@ -1,10 +1,15 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 const usePagination = <T>(initialItems: T[], itemsPerPage: number) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsToShow, setItemsToShow] = useState(itemsPerPage);
   const totalItems = initialItems.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  useEffect(() => {
+    setCurrentPage(1);
+    setItemsToShow(itemsPerPage);
+  }, [initialItems, itemsPerPage]);
 
   const visibleItems = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
@@ -17,16 +22,17 @@ const usePagination = <T>(initialItems: T[], itemsPerPage: number) => {
       setCurrentPage(pageNumber);
       setItemsToShow(itemsPerPage);
     }
+    window.scrollTo(0, 0);
   };
 
   const onLoadMore = () => {
     setItemsToShow((prev) => prev + itemsPerPage);
   };
 
-  const hasMore = itemsToShow < initialItems.length - (currentPage - 1) * itemsPerPage;
   const isLastPage = currentPage === totalPages;
   const hasMoreOnCurrentPage = itemsToShow < initialItems.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).length;
-  return { visibleItems, totalPages, currentPage, goToPage, onLoadMore, hasMore, hasMoreOnCurrentPage, isLastPage };
+
+  return { visibleItems, totalPages, currentPage, goToPage, onLoadMore, hasMoreOnCurrentPage, isLastPage };
 };
 
 export default usePagination;

@@ -3,7 +3,6 @@ import Delivery from "../../components/Delivery";
 import Filters from "../../components/Filters";
 import GoodsCategories from "../../components/GoodsCategories";
 import GoodsList from "../../components/GoodsList";
-import PaginationContainer from "../../components/PaginationContainer";
 
 import vape from "../../imgs/aboutGoods/vape.jpg";
 import electronnaSygareta from "../../imgs/aboutGoods/electronnie-sigarety.jpg";
