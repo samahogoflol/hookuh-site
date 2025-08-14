@@ -6,7 +6,7 @@ interface GoodsListProps {
   visibleItems: Product[];
 }
 
-const GoodsList: React.FC<GoodsListProps> = ({ visibleItems }) => {
+const GoodsList = ({ visibleItems }: GoodsListProps) => {
   return (
     <>
       {visibleItems.map((item) => {
@@ -28,6 +28,7 @@ const GoodsList: React.FC<GoodsListProps> = ({ visibleItems }) => {
           </div>
         );
       })}
+
     </>
   );
 };

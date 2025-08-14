@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CleverHeader from "./components/CleverHeader";
 import MainPage from "./pages/MainPage";
+import CategoryPage from "./pages/CategoryPage";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PaymentAndDeliveryPage from "./pages/PaymentAndDeliveryPage";
@@ -27,7 +28,7 @@ function App() {
             <Route path="/forPartners" element={<PartnershipPage />} />
             <Route path="/forWholesalers" element={<ForWholesalersPage />} />
             <Route path="/contactWithUs" element={<ContactsPage />} />
-            <Route path="category/:categoryName" element={<CleverHeader />} />
+            <Route path="/:categoryName" element={<CategoryPage />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </div>

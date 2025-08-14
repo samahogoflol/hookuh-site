@@ -8,8 +8,8 @@ import lostVapeUrsa from "../imgs/vapeGoodsList/kartridge_lost_vape_ursa_nano_v2
 import vooPooPnP_m2 from "../imgs/vapeGoodsList/isparitel_voopoo_pnp_m2_0.6_om.webp";
 import smok_lp1 from "../imgs/vapeGoodsList/isparitel_smok_lp1_dc_0.8_om.webp";
 
-import vape from "../../imgs/aboutGoods/vape.jpg";
-import electronnaSygareta from "../../imgs/aboutGoods/electronnie-sigarety.jpg";
+import vape from "../imgs/aboutGoods/vape.jpg";
+import electronnaSygareta from "../imgs/aboutGoods/electronnie-sigarety.jpg";
 
 export const electroCygaretteTypeOfProductContent: Brand[] = [
   {

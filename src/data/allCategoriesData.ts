@@ -13,7 +13,7 @@ export const allCategoriesData = {
     productContent: tabaccoPageContent,
     description: tabaccoPageDescriptionContent,
   },
-  electonicCygarette: {
+  electonnicCigarette: {
     title: "Електронні Сигарети",
     typeOfProducts: electroCygaretteTypeOfProductContent,
     productContent: electroCygaretteProductContent,

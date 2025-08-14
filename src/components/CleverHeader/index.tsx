@@ -5,28 +5,28 @@ const CleverHeader = () => {
     <>
       <nav className="flex mt-1">
         <ul className="flex gap-8 font-bold text-[1.1rem] justify-start cursor-pointer">
-          <Link to={`/category/electonniCygarety`}>
+          <Link to={`/electonnicCigarette`}>
             <li>Електронні сигарети</li>
           </Link>
-          <Link to={`/category/tabacco/`}>
+          <Link to={`/tabacco`}>
             <li>Тютюн</li>
           </Link>
-          <Link to={`/category/liquids`}>
+          <Link to={`/liquids`}>
             <li>Рідини</li>
           </Link>
-          <Link to={`/category/hookahs`}>
+          <Link to={`/hookahs`}>
             <li>Кальяни</li>
           </Link>
-          <Link to={`/category/coal`}>
+          <Link to={`/coal`}>
             <li>Вугілля</li>
           </Link>
-          <Link to={`/category/hookah-accessories`}>
+          <Link to={`/hookah-accessories`}>
             <li>Аксесуари для кальяну</li>
           </Link>
-          <Link to={`/category/hookah-shafts`}>
+          <Link to={`/hookah-shafts`}>
             <li>Шахти для кальяну</li>
           </Link>
-          <Link to={`/category/snus`}>
+          <Link to={`/snus`}>
             <li>Снюс</li>
           </Link>
         </ul>
