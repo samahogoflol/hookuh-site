@@ -54,10 +54,12 @@ const CategoryPage = () => {
                   <h2 className="text-center mt-5 mb-5 text-3xl font-medium">{block.header}</h2>
                   <div className="grid grid-cols-[1000px_1fr]">
                     <div>
-                      <p>{block.description1}</p>
-                      {block.description2 && <p>{block.description2}</p>}
+                      <p className="mb-5 mt-5">{block.description1}</p>
+                      {block.description2 && <p className="mb-5">{block.description2}</p>}
+                      {block.description3 && <p className="mb-5">{block.description3}</p>}
+
                       {block.listItems && (
-                        <ul className="flex flex-col gap-3 list-disc mt-5 mb-5 pl-10 ">
+                        <ul className="flex flex-col gap-1 list-disc mt-5 mb-5 pl-10 ">
                           {block.listItems.liItem1 && <li>{block.listItems.liItem1}</li>}
                           {block.listItems.liItem2 && <li>{block.listItems.liItem2}</li>}
                           {block.listItems.liItem3 && <li>{block.listItems.liItem3}</li>}

@@ -14,6 +14,7 @@ export interface ContentBlock {
   header: string;
   description1: string;
   description2?: string;
+  description3?: string;
   listItems?: ListItems;
   conclusion1?: string;
   conclusion2?: string;

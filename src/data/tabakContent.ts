@@ -199,7 +199,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Apple Bears (Яблучні Ведмедики)",
     line: "Light Line",
-    imgURL: appleBearsLightLine,
+    imgUrl: appleBearsLightLine,
     price: 270,
     having: true,
     about: {
@@ -221,7 +221,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Orange, Mango (Апельсин, Манго)",
     line: "Light Line",
-    imgURL: orangeMangoLightLine,
+    imgUrl: orangeMangoLightLine,
     price: 270,
     having: true,
     description:
@@ -245,7 +245,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Ice, Lemon, Rasberry (Лід, Лимон, Малина)",
     line: "Light Line",
-    imgURL: iceLemonRasberryLightLine,
+    imgUrl: iceLemonRasberryLightLine,
     price: 270,
     having: true,
     description:
@@ -269,7 +269,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Ice, Lemon, Mint (Лід, Лимон, Mint)",
     line: "Light Line",
-    imgURL: iceLemonMintLightLine,
+    imgUrl: iceLemonMintLightLine,
     price: 270,
     having: true,
     description:
@@ -293,7 +293,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Berry Morse (Ягідний Морс)",
     line: "Light Line",
-    imgURL: berryMorse,
+    imgUrl: berryMorse,
     price: 270,
     having: true,
     description:
@@ -317,7 +317,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Blueberry Muffin (Чорничний Мафін)",
     line: "Light Line",
-    imgURL: blueberryMuffin,
+    imgUrl: blueberryMuffin,
     price: 270,
     having: true,
     description:
@@ -341,7 +341,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Skittles (Скіттлс)",
     line: "Light Line",
-    imgURL: skittles,
+    imgUrl: skittles,
     price: 270,
     having: true,
     description:
@@ -365,7 +365,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Lemon-Honey Holls (Лимонно-Медовий Холлс)",
     line: "Light Line",
-    imgURL: lemonHoneyHolls,
+    imgUrl: lemonHoneyHolls,
     price: 270,
     having: true,
     description:
@@ -389,7 +389,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Strawberry Milpheus (Полуничний Мільфей)",
     line: "Light Line",
-    imgURL: strawberryMilpheus,
+    imgUrl: strawberryMilpheus,
     price: 270,
     having: true,
     description:
@@ -413,7 +413,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -437,7 +437,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -461,7 +461,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -485,7 +485,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -509,7 +509,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -533,7 +533,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -557,7 +557,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -581,7 +581,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -605,7 +605,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -629,7 +629,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -653,7 +653,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -677,7 +677,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -701,7 +701,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -725,7 +725,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -749,7 +749,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -773,7 +773,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -797,7 +797,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -821,7 +821,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -845,7 +845,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -869,7 +869,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -893,7 +893,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -917,7 +917,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -941,7 +941,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -965,7 +965,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -989,7 +989,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1013,7 +1013,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1037,7 +1037,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1061,7 +1061,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1085,7 +1085,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1109,7 +1109,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1133,7 +1133,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1157,7 +1157,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1181,7 +1181,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1205,7 +1205,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1229,7 +1229,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1253,7 +1253,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:
@@ -1277,7 +1277,7 @@ export const tabaccoPageContent: Product[] = [
     brand: "Тютюн 420(Чотири Двадцять)",
     name: "Grape Mint (Виноградна М'ята)",
     line: "Light Line",
-    imgURL: grapeMint,
+    imgUrl: grapeMint,
     price: 270,
     having: true,
     description:

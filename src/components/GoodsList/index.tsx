@@ -15,7 +15,7 @@ const GoodsList = ({ visibleItems }: GoodsListProps) => {
             key={item.id}
             className="w-68.5 min-h-110 max-h-120 font-bold text-center flex flex-col items-center p-2 border border-gray-100 border-t-white"
           >
-            <img className="" src={item.imgURL} width={220} alt="" />
+            <img className="" src={item.imgUrl} width={220} alt="" />
             <h2 className="h-25">
               {item.brand}
               {item.name}
@@ -28,7 +28,6 @@ const GoodsList = ({ visibleItems }: GoodsListProps) => {
           </div>
         );
       })}
-
     </>
   );
 };
