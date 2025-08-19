@@ -1,20 +1,34 @@
-export interface Brand {
+export interface Product {
   id: string;
+  brand: string;
   name: string;
   imgURL?: string;
-}
-
-export interface HookahProduct {
-  id: string;
-  name: string;
-  imgUrl?: string;
   price?: number;
   having?: boolean;
+}
+
+export interface HookahProduct extends Product {
   saucer?: {
     firstType: string;
     secondType: string;
     thirdType: string;
     fourthType: string;
+  };
+  about: {
+    brand?: string;
+    heighWithoutBowl?: number;
+    typeOfConnection?: string;
+    meterial?: string;
+    diameterOfMine?: number;
+    numberOfPortsUnderTheHose?: number;
+    colorOfColb?: string;
+    colorOfMine?: string;
+    hookahMineDiffuser?: string;
+    oilCollector?: string;
+    typeOfSaucer?: string;
+    volumeColb?: number;
+    bowlIsAvailable?: string;
+    country?: string;
   };
   description?:
     | string
@@ -38,28 +52,9 @@ export interface HookahProduct {
         conclusion2?: string;
         contactWithUs: string;
       };
-  about: {
-    brand?: string;
-    heighWithoutBowl?: number;
-    typeOfConnection?: string;
-    meterial?: string;
-    diameterOfMine?: number;
-    numberOfPortsUnderTheHose?: number;
-    colorOfColb?: string;
-    colorOfMine?: string;
-    hookahMineDiffuser?: string;
-    oilCollector?: string;
-    typeOfSaucer?: string;
-    volumeColb?: number;
-    bowlIsAvailable?: string;
-    country?: string;
-  };
 }
 
 export interface Product {
-  id: string;
-  brand: string;
-  name: string;
   line?: string;
   levelOfNicotine1?: string;
   levelOfNicotine2?: string;
@@ -85,9 +80,6 @@ export interface Product {
         conclusion2?: string;
         contactWithUs: string;
       };
-  imgUrl?: string;
-  price: number;
-  having: boolean;
   about?: {
     country?: string;
     sweet?: number;
