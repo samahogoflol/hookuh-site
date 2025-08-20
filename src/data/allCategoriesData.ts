@@ -1,35 +1,9 @@
-import {
-  electroCygaretteDescriptionContent,
-  electroCygaretteProductContent,
-  electroCygaretteTypeOfProductContent,
-} from "./electronicCigaretteContent";
-import { tabaccoPageBrandContent, tabaccoPageContent, tabaccoPageDescriptionContent } from "./tabakContent";
-import { liquidsProductContent, liquidsTypeOfProductContent, liquidDescriptionContent } from "./liquidsContent";
-import { hookahsTypeOfProductContent, hookahDescriptionContent, hookahProductContent } from "./hookahContent";
+import { tabacco420Category } from "./tabacco/brands/420";
 
-export const allCategoriesData = {
-  tabacco: {
-    title: "Табак",
-    typeOfProducts: tabaccoPageBrandContent,
-    productContent: tabaccoPageContent,
-    description: tabaccoPageDescriptionContent,
+export const allCategoriesData = [
+  {
+    slug: "tabacco",
+    title: "Тютюн",
+    subcategories: [tabacco420Category],
   },
-  electonnicCigarette: {
-    title: "Електронні Сигарети",
-    typeOfProducts: electroCygaretteTypeOfProductContent,
-    productContent: electroCygaretteProductContent,
-    description: electroCygaretteDescriptionContent,
-  },
-  liquids: {
-    title: "Рідини Для Електронних Сигарет",
-    typeOfProducts: liquidsTypeOfProductContent,
-    productContent: liquidsProductContent,
-    description: liquidDescriptionContent,
-  },
-  hookahs: {
-    title: "Кальяни",
-    typeOfProducts: hookahsTypeOfProductContent,
-    productContent: hookahProductContent,
-    description: hookahDescriptionContent,
-  },
-};
+];

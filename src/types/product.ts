@@ -1,8 +1,8 @@
 export interface Product {
   id: string;
   name: string;
-  price?: number;
-  imgUrl?: string;
+  imgUrl: string;
+  price: number;
   having?: boolean;
 }
 
@@ -15,13 +15,7 @@ export interface DescriptionContent {
   header3?: string;
   textUnderHeader3?: string;
   secondTextUnderHeader3?: string;
-  liItem1?: string;
-  liItem2?: string;
-  liItem3?: string;
-  liItem4?: string;
-  liItem5?: string;
-  liItem6?: string;
-  liItem7?: string;
+  liItems?: string[];
   conclusion1?: string;
   conclusion2?: string;
   contactWithUs: string;
@@ -30,6 +24,8 @@ export interface DescriptionContent {
 export type ProductDescription = string | DescriptionContent;
 
 export interface TabaccoProduct extends Product {
+  strength?: "light" | "medium" | "strong";
+  weight?: "40g" | "100g" | "250g" | "1000g";
   about?: {
     sweet?: number;
     sour?: number;

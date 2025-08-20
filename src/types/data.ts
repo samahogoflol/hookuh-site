@@ -1,4 +1,5 @@
 import { allCategoriesData } from "../data/allCategoriesData";
+import type { Product } from "./product";
 
 export interface ListItems {
   liItem1?: string;
@@ -20,19 +21,11 @@ export interface ContentBlock {
   conclusion2?: string;
   imgUrl?: string;
 }
-export interface Product {
-  id: string;
-  name: string;
-  price: string;
-  imgUrl: string;
-  strength?: "light" | "medium" | "strong";
-  weight?: "40g" | "100g" | "250g" | "1000g";
-}
 
 export interface Category {
   slug?: string;
   title?: string;
-  products?: Product;
+  products?: Product[];
   subcategories?: Category[];
 }
 

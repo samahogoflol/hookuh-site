@@ -1,47 +1,23 @@
+import { category420_40g } from "./40gram";
+import { category420_100g } from "./100gram";
+import { category420_250g } from "./250gram";
+import { darkLine40grProducts } from "./40gram/darkLine";
+import { darkLine100grProducts } from "./100gram/darkLine";
+import { darkLine250grProducts } from "./250gram/darkLine";
+import { lightLine100grProducts } from "./100gram/lightLine";
+import { lightLine250grProducts } from "./250gram/lightLine";
+
 import type { Category } from "../../../../types/data";
 
 export const tabacco420Category: Category = {
-  slug: "tabacco420",
+  slug: "tabacco_420",
   title: "Кальянний Тютюн 420(Чотири Двадцять)",
-
-  subcategories: [
-    {
-      slug: "tabacco_420_40gr",
-      title: "Тютюн 420 (Чотири Двадцять) 40 грам",
-      subcategories: [
-        {
-          slug: "tabacco_420_darkLine_40gr",
-          title: "Тютюн 420 Dark Line 40 грам",
-        },
-      ],
-    },
-    {
-      slug: "tabacco_420_100gr",
-      title: "Тютюн 420 (Чотири Двадцять) 100 грам",
-      subcategories: [
-        {
-          slug: "tabacco_420_darkLine_100gr",
-          title: "Тютюн 420 Dark Line 100 грам",
-        },
-        {
-          slug: "tabacco_420_lightLine_100gr",
-          title: "Тютюн 420 Light Line 100 грам",
-        },
-      ],
-    },
-    {
-      slug: "tabacco_420_250gr",
-      title: "Тютюн 420 (Чотири Двадцять) 250 грам",
-      subcategories: [
-        {
-          slug: "tabacco_420_darkLine_250gr",
-          title: "Тютюн 420 Dark Line 250 грам",
-        },
-        {
-          slug: "tabacco_420_lightLine_250gr",
-          title: "Тютюн 420 Light Line 250 грам",
-        },
-      ],
-    },
+  products: [
+    ...darkLine100grProducts,
+    ...lightLine100grProducts,
+    ...darkLine40grProducts,
+    ...darkLine250grProducts,
+    ...lightLine250grProducts,
   ],
+  subcategories: [category420_40g, category420_100g, category420_250g],
 };
