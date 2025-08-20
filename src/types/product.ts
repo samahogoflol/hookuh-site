@@ -1,10 +1,48 @@
 export interface Product {
   id: string;
-  brand: string;
   name: string;
-  imgURL?: string;
   price?: number;
+  imgUrl?: string;
   having?: boolean;
+}
+
+export interface DescriptionContent {
+  header1?: string;
+  textUnderHeader1?: string;
+  header2?: string;
+  textUnderHeader2?: string;
+  secondTextUnderHeader2?: string;
+  header3?: string;
+  textUnderHeader3?: string;
+  secondTextUnderHeader3?: string;
+  liItem1?: string;
+  liItem2?: string;
+  liItem3?: string;
+  liItem4?: string;
+  liItem5?: string;
+  liItem6?: string;
+  liItem7?: string;
+  conclusion1?: string;
+  conclusion2?: string;
+  contactWithUs: string;
+}
+
+export type ProductDescription = string | DescriptionContent;
+
+export interface TabaccoProduct extends Product {
+  about?: {
+    sweet?: number;
+    sour?: number;
+    spicy?: number;
+    fresh?: number;
+    taste?: string;
+    tough?: string;
+    smokiness?: string;
+    fireResistance?: string;
+    recomendedCup?: string;
+    country?: string;
+  };
+  description?: ProductDescription;
 }
 
 export interface HookahProduct extends Product {
@@ -14,7 +52,7 @@ export interface HookahProduct extends Product {
     thirdType: string;
     fourthType: string;
   };
-  about: {
+  about?: {
     brand?: string;
     heighWithoutBowl?: number;
     typeOfConnection?: string;
@@ -30,77 +68,5 @@ export interface HookahProduct extends Product {
     bowlIsAvailable?: string;
     country?: string;
   };
-  description?:
-    | string
-    | {
-        header1?: string;
-        textUnderHeader1?: string;
-        header2?: string;
-        textUnderHeader2?: string;
-        secondTextUnderHeader2?: string;
-        header3?: string;
-        textUnderHeader3?: string;
-        secondTextUnderHeader3?: string;
-        liItem1?: string;
-        liItem2?: string;
-        liItem3?: string;
-        liItem4?: string;
-        liItem5?: string;
-        liItem6?: string;
-        liItem7?: string;
-        conclusion1?: string;
-        conclusion2?: string;
-        contactWithUs: string;
-      };
-}
-
-export interface Product {
-  line?: string;
-  levelOfNicotine1?: string;
-  levelOfNicotine2?: string;
-  description?:
-    | string
-    | {
-        header1?: string;
-        textUnderHeader1?: string;
-        header2?: string;
-        textUnderHeader2?: string;
-        secondTextUnderHeader2?: string;
-        header3?: string;
-        textUnderHeader3?: string;
-        secondTextUnderHeader3?: string;
-        liItem1?: string;
-        liItem2?: string;
-        liItem3?: string;
-        liItem4?: string;
-        liItem5?: string;
-        liItem6?: string;
-        liItem7?: string;
-        conclusion1?: string;
-        conclusion2?: string;
-        contactWithUs: string;
-      };
-  about?: {
-    country?: string;
-    sweet?: number;
-    sour?: number;
-    spice?: number;
-    fresh?: number;
-    taste?: string;
-    tough?: string;
-    smokiness?: string;
-    fireResistance?: string;
-    weigh?: number;
-    recomendedCup?: string;
-    cartridgeCapacity?: string;
-    cartridgeResistance?: string;
-    typeOfCoil?: string;
-    cartridgeFixed?: string;
-    cartridgeRefuilingType?: string;
-    color?: string;
-    volume?: number;
-    VGPG?: string;
-    toughOfNicotine?: string;
-    typeOfNicotine?: string;
-  };
+  description?: ProductDescription;
 }

@@ -9,7 +9,7 @@ import { hookahsTypeOfProductContent, hookahDescriptionContent, hookahProductCon
 
 export const allCategoriesData = {
   tabacco: {
-    title: "Тютюн",
+    title: "Табак",
     typeOfProducts: tabaccoPageBrandContent,
     productContent: tabaccoPageContent,
     description: tabaccoPageDescriptionContent,
