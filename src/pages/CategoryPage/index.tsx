@@ -3,7 +3,6 @@ import type { Product } from "../../types/product";
 import { useParams } from "react-router-dom";
 import { allCategoriesData } from "../../data/allCategoriesData";
 import GoodsList from "../../components/GoodsList";
-import BtnAccardion from "../../components/Buttons/BtnAccardion";
 import Filters from "../../components/Filters";
 import Page404 from "../404";
 import GoodsCategories from "../../components/GoodsCategories";

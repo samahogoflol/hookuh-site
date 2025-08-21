@@ -1,4 +1,6 @@
 import { darkLine40grProducts } from "./darkLine";
+import { tabacco420Description40gr } from "./description40gr";
+
 import type { Category } from "../../../../../types/data";
 
 export const category420_40g: Category = {
@@ -12,4 +14,5 @@ export const category420_40g: Category = {
       products: [...darkLine40grProducts],
     },
   ],
+  description: [tabacco420Description40gr],
 };

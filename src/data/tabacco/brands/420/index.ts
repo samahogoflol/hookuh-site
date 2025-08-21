@@ -6,6 +6,7 @@ import { darkLine100grProducts } from "./100gram/darkLine";
 import { darkLine250grProducts } from "./250gram/darkLine";
 import { lightLine100grProducts } from "./100gram/lightLine";
 import { lightLine250grProducts } from "./250gram/lightLine";
+import { totalDescriptionPage420 } from "./totalDescriptionPage420";
 
 import type { Category } from "../../../../types/data";
 
@@ -20,4 +21,5 @@ export const tabacco420Category: Category = {
     ...lightLine250grProducts,
   ],
   subcategories: [category420_40g, category420_100g, category420_250g],
+  description: [totalDescriptionPage420],
 };

@@ -1,4 +1,5 @@
 import type { TabaccoProduct } from "../../../../../types/product";
+
 import lemon_squirt_dark_40gr from "../../../../../imgs/tabaks/420/40gr_darkLine/420_dark_40gr_lemon_squirt.webp";
 import oblepiha_dark_40gr from "../../../../../imgs/tabaks/420/40gr_darkLine/420_dark_40gr_oblepiha.webp";
 import pomelo_dark_40gr from "../../../../../imgs/tabaks/420/40gr_darkLine/420_dark_40gr_pomelo.webp";

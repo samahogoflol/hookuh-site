@@ -13,7 +13,7 @@ export interface ListItems {
 
 export interface ContentBlock {
   header: string;
-  description1: string;
+  description1?: string;
   description2?: string;
   description3?: string;
   listItems?: ListItems;
@@ -27,6 +27,7 @@ export interface Category {
   title?: string;
   products?: Product[];
   subcategories?: Category[];
+  description?: CategoryDescription[];
 }
 
 export type CategoryDescription = ContentBlock[];
