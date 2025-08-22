@@ -28,7 +28,7 @@ function App() {
             <Route path="/forPartners" element={<PartnershipPage />} />
             <Route path="/forWholesalers" element={<ForWholesalersPage />} />
             <Route path="/contactWithUs" element={<ContactsPage />} />
-            <Route path="/:categoryName" element={<CategoryPage />} />
+            <Route path="/:slugs" element={<CategoryPage />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </div>

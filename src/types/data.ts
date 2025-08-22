@@ -27,6 +27,8 @@ export interface Category {
   title?: string;
   products?: Product[];
   subcategories?: Category[];
+  imgUrl?: string;
+  categoryName?: string;
   description?: CategoryDescription[];
 }
 

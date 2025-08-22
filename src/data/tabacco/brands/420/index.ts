@@ -10,6 +10,8 @@ import { totalDescriptionPage420 } from "./totalDescriptionPage420";
 
 import type { Category } from "../../../../types/data";
 
+import logo_420 from "../../../../imgs/logotypes/4_20_logo.webp";
+
 export const tabacco420Category: Category = {
   slug: "tabacco_420",
   title: "Кальянний Тютюн 420(Чотири Двадцять)",
@@ -22,4 +24,6 @@ export const tabacco420Category: Category = {
   ],
   subcategories: [category420_40g, category420_100g, category420_250g],
   description: [totalDescriptionPage420],
+  imgUrl: logo_420,
+  categoryName : "Тютюн 420(Чотири Двадцять)",
 };

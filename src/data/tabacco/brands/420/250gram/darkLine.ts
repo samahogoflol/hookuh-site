@@ -8,7 +8,7 @@ import scotch_whisky_dark_250gr from "../../../../../imgs/tabaks/420/250gr_darkL
 
 export const darkLine250grProducts: TabaccoProduct[] = [
   {
-    id: "0",
+    id: "420_darkLine_250gr_cherryLemonade",
     name: "Тютюн 420(Чотири Двадцять) Dark Line Cherry Lemonade (Вишня Лимонад) 250гр",
     price: 580,
     imgUrl: cherry_lemonade_dark_250gr,
@@ -29,7 +29,7 @@ export const darkLine250grProducts: TabaccoProduct[] = [
       "420 - це ароматна тютюнова суміш, яка здатна перевернути ваші смакові рецептори з ніг на голову. Продукт вирізняється середньою міцністю. Для її посилення набивка має бути щільнішою, для більшої легкості - розпушена перед курінням. Під час використання тютюн дає густий, ароматний дим. Тютюн 420(Чотири Двадцять) Dark Line Cherry Lemonade (Вишня Лимонад) 250гр має безпечний склад. Начинку виготовляють із листя добірних сортів тютюну, яке перед приготуванням ретельно очищають, а потім заправляють великою кількістю солодкого сиропу.",
   },
   {
-    id: "1",
+    id: "420_darkLine_250gr_malibuVibe",
     name: "Тютюн 420(Чотири Двадцять) Dark Line Malibu Vibe (Малібу Вайб) 250гр",
     price: 580,
     imgUrl: malibu_vibe_dark_250gr,
@@ -48,7 +48,7 @@ export const darkLine250grProducts: TabaccoProduct[] = [
     },
   },
   {
-    id: "2",
+    id: "420_darkLine_250gr_peachGelatto",
     name: "Тютюн 420(Чотири Двадцять) Dark Line Peach Gelatto (Персик Джелатто) 250гр",
     price: 580,
     imgUrl: peach_gelatto_dark_250gr,
@@ -67,7 +67,7 @@ export const darkLine250grProducts: TabaccoProduct[] = [
     },
   },
   {
-    id: "3",
+    id: "420_darkLine_250gr_toxicCandy",
     name: "Тютюн 420(Чотири Двадцять) Dark Line Toxic Candy (Токсик Цукерка) 250гр",
     price: 580,
     imgUrl: toxic_candy_dark_250gr,
@@ -86,7 +86,7 @@ export const darkLine250grProducts: TabaccoProduct[] = [
     },
   },
   {
-    id: "4",
+    id: "420_darkLine_250gr_scotchWhisky",
     name: "Тютюн 420(Чотири Двадцять) Dark Line Scotch Whisky (Віскі) 250гр",
     price: 580,
     imgUrl: scotch_whisky_dark_250gr,

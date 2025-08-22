@@ -1,23 +1,20 @@
-interface CategoryItem {
-  id: string;
-  name: string;
-  imgURL: string;
-}
+import { allCategoriesData } from "../../data/allCategoriesData";
+import { useParams, Link } from "react-router-dom";
 
-interface GoodsCategoriesProps {
-  categories: CategoryItem[];
-}
+const GoodsCategories = () => {
+  const { slugs } = useParams();
+  const findRightWay = slugs?.split("/")[0];
+  const currentCategory = allCategoriesData.find((category) => category.slug === findRightWay);
 
-const GoodsCategories = ({ categories }: GoodsCategoriesProps) => {
   return (
-    <div className="grid grid-cols-4 pb-1 pr-5 pl-2 pt-5 border border-gray-200 items-center">
-      {categories.map((item) => (
-        <div key={item.id} className="flex hover:bg-gray-100 items-center cursor-pointer gap-3 mb-5 ml-3">
-          <img src={item.imgURL} alt={item.name} width={45} />
-          <p>{item.name}</p>
+    <>
+      {currentCategory?.subcategories?.map((i) => (
+        <div key={i.slug} className="flex hover:bg-gray-100 items-center cursor-pointer gap-3 mb-5 ml-3">
+          <img src={i.imgUrl} alt={i.title} width={45} />
+          <p>{i.title}</p>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
