@@ -1,9 +1,9 @@
 import acherry_lemonade from "../../../../imgs/tabaks/420/250gr_darkLine/420_darkLine_250gr_cherry_lemonade.webp";
 import peach_gelatto from "../../../../imgs/tabaks/420/250gr_darkLine/420_darkLine_250gr_peach_gelatto-.webp";
 
-import type { CategoryDescription } from "../../../../types/data";
+import type { ContentBlock } from "../../../../types/data";
 
-export const totalDescriptionPage420: CategoryDescription = [
+export const totalDescriptionPage420: ContentBlock[] = [
   {
     header: "Тютюн для кальяну 420(Чотири Двадцять)",
     description1:

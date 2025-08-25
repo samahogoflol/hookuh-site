@@ -1,7 +1,7 @@
 import { allCategoriesData } from "../../data/allCategoriesData";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-const GoodsCategories = () => {
+const Categories = () => {
   const { slugs } = useParams();
   const findRightWay = slugs?.split("/")[0];
   const currentCategory = allCategoriesData.find((category) => category.slug === findRightWay);
@@ -18,4 +18,4 @@ const GoodsCategories = () => {
   );
 };
 
-export default GoodsCategories;
+export default Categories;

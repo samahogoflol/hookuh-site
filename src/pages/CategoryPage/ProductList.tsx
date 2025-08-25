@@ -1,17 +1,12 @@
-import usePagination from "../../customHooks/usePaginaton";
-import type { Category } from "../../types/data";
 import type { Product } from "../../types/product";
-import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
-import ButtonHeart from "../Buttons/BtnHeart";
+import BtnAddItemToCart from "../../components/Buttons/BtnAddItemToCart";
+import ButtonHeart from "../../components/Buttons/BtnHeart";
 
-interface GoodsListProps {
-  findRightCategory: Category;
+interface ProductListProps {
+  visibleItems: Product[];
 }
 
-const GoodsList: React.FC<GoodsListProps> = ({ findRightCategory }) => {
-  const test = findRightCategory ? findRightCategory.products : [];
-  const { visibleItems } = usePagination<Product>(test, 20);
-
+const ProductsList: React.FC<ProductListProps> = ({ visibleItems }) => {
   return (
     <>
       {visibleItems.map((item) => (
@@ -32,4 +27,4 @@ const GoodsList: React.FC<GoodsListProps> = ({ findRightCategory }) => {
   );
 };
 
-export default GoodsList;
+export default ProductsList;

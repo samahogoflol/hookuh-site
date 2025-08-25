@@ -1,6 +1,6 @@
-import type { CategoryDescription } from "../../../../../types/data";
+import type { ContentBlock } from "../../../../../types/data";
 
-export const tabacco420Description250gr: CategoryDescription = [
+export const tabacco420Description250gr: ContentBlock[] = [
   {
     header: "Тютюн 420(Чотири Двадцять) 250 грам",
     description1:

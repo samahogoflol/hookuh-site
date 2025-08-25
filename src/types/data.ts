@@ -29,16 +29,8 @@ export interface Category {
   subcategories?: Category[];
   imgUrl?: string;
   categoryName?: string;
-  description?: CategoryDescription[];
+  description?: ContentBlock[];
 }
 
-export type CategoryDescription = ContentBlock[];
-
-export interface CategoryData {
-  title: string;
-  typeOfProducts: any;
-  productContent: any;
-  description: CategoryDescription;
-}
 
 export type CategoryName = keyof typeof allCategoriesData;

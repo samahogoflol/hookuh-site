@@ -1,9 +1,9 @@
 import pomelo from "../../../../../imgs/tabaks/420/40gr_darkLine/420_dark_40gr_pomelo.webp";
 import tropical_splash from "../../../../../imgs/tabaks/420/40gr_darkLine/420_darkLine_40gr_tropical_splash.webp";
 
-import type { CategoryDescription } from "../../../../../types/data";
+import type { ContentBlock } from "../../../../../types/data";
 
-export const tabacco420Description40gr: CategoryDescription = [
+export const tabacco420Description40gr: ContentBlock[] = [
   {
     header: "Тютюн для кальяну Чотири Двадцять фасуванням 40 грам",
     description1:

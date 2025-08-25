@@ -1,23 +1,22 @@
-import { useParams } from "react-router-dom";
-import usePagination from "../../customHooks/usePaginaton";
-import { allCategoriesData } from "../../data/allCategoriesData";
+interface PaginationContainerProps {
+  onLoadMore: () => void;
+  hasMoreOnCurrentPage: boolean;
+}
 
-const PaginationContainer = () => {
+const PaginationContainer: React.FC<PaginationContainerProps> = ({ onLoadMore, hasMoreOnCurrentPage }) => {
   // const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
-  // console.log(totalPages);
-
-  const { slugs } = useParams();
-  const findRightWay = slugs?.split("/")[0];
-  const currentCategory = allCategoriesData.find((category) => category.slug === findRightWay);
-  const test = currentCategory?.products ? currentCategory.products : [];
 
   return (
     <>
-      <div>
-        <button className="w-50 h-8 border rounded border-gray-400 hover:bg-gray-200 cursor-pointer">Показати ще 20 товарів</button>
-      </div>
-
-      {/* 
+      {hasMoreOnCurrentPage ? (
+        <div>
+          <button onClick={onLoadMore} className="w-50 h-8 border rounded border-gray-400 hover:bg-gray-200 cursor-pointer">
+            Показати ще 20 товарів
+          </button>
+        </div>
+      ) : null}
+    </>
+    /* 
       <div className="flex">
         <div className="flex justify-center items-center space-x-2 mt-5">
           <button
@@ -46,8 +45,7 @@ const PaginationContainer = () => {
             &gt;
           </button>
         </div>
-      </div> */}
-    </>
+      </div> */
   );
 };
 
