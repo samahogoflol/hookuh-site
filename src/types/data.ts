@@ -25,7 +25,7 @@ export interface ContentBlock {
 export interface Category {
   slug?: string;
   title?: string;
-  products?: Product[];
+  products: Product[];
   subcategories?: Category[];
   imgUrl?: string;
   categoryName?: string;

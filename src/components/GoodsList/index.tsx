@@ -1,17 +1,20 @@
-import { useParams, Link } from "react-router-dom";
-import { allCategoriesData } from "../../data/allCategoriesData";
-
+import usePagination from "../../customHooks/usePaginaton";
+import type { Category } from "../../types/data";
+import type { Product } from "../../types/product";
 import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
 import ButtonHeart from "../Buttons/BtnHeart";
 
-const GoodsList = () => {
-  const { slugs } = useParams();
-  const findRightWay = slugs?.split("/")[0];
-  const currentCategory = allCategoriesData.find((category) => category.slug === findRightWay);
+interface GoodsListProps {
+  findRightCategory: Category;
+}
+
+const GoodsList: React.FC<GoodsListProps> = ({ findRightCategory }) => {
+  const test = findRightCategory ? findRightCategory.products : [];
+  const { visibleItems } = usePagination<Product>(test, 20);
 
   return (
     <>
-      {currentCategory?.products?.map((item) => (
+      {visibleItems.map((item) => (
         <div
           key={item.id}
           className="w-68.5 h-115 font-bold text-center flex flex-col justify-between items-center p-2 border border-gray-100 border-t-white"

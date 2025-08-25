@@ -1,47 +1,43 @@
-import { useParams, Link } from "react-router-dom";
 import { allCategoriesData } from "../../data/allCategoriesData";
+import { useParams } from "react-router-dom";
+
 import Filters from "../../components/Filters";
-import BtnAddItemToCart from "../../components/Buttons/BtnAddItemToCart";
 import GoodsCategories from "../../components/GoodsCategories";
-import Page404 from "../404";
 import GoodsList from "../../components/GoodsList";
+import PaginationContainer from "../../components/PaginationContainer";
+import GoodsDescription from "../../components/GoodsDescription";
 
 const CategoryPage = () => {
   const { slugs } = useParams();
-  const findRightWay = slugs?.split("/")[0];
-  const currentCategory = allCategoriesData.find((category) => category.slug === findRightWay);
-
-  console.log(allCategoriesData);
+  const findRightCategory = allCategoriesData.find((item) => item.slug === slugs);
 
   return (
     <>
-      {allCategoriesData.map((item) => (
-        <div key={item.slug}>
-          <h2 className="text-center mt-10 mb-5 text-3xl font-medium">{item.title}</h2>
-          <div className="grid grid-cols-[280px_1fr]">
-            <div>
-              <Filters />
-            </div>
-            <div>
-              <GoodsCategories />
-              <div className="grid grid-cols-4">
-                <GoodsList />
-              </div>
-            </div>
+      <h2 className="text-center mt-10 mb-5 text-3xl font-medium">{findRightCategory?.title}</h2>
+      <div className="grid grid-cols-[280px_1fr]">
+        <div>
+          <Filters />
+        </div>
+        <div>
+          <GoodsCategories />
+          <div className="grid grid-cols-4">{findRightCategory && <GoodsList findRightCategory={findRightCategory} />}</div>
+          <div className="flex flex-col items-center mt-5">
+            <PaginationContainer />
           </div>
         </div>
-      ))}
+        {findRightCategory && <GoodsDescription findRightCategory={findRightCategory} />}
+      </div>
     </>
   );
 };
+
+export default CategoryPage;
 
 {
   /* <div key={item.id} className="flex hover:bg-gray-100 items-center cursor-pointer gap-3 mb-5 ml-3">
 <img src={item.imgURL} alt={item.name} width={45} />
 <p>{item.name}</p> */
 }
-
-export default CategoryPage;
 
 // import type { ContentBlock } from "../../types/data";
 // import type { Product } from "../../types/product";
