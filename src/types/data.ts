@@ -32,5 +32,4 @@ export interface Category {
   description?: ContentBlock[];
 }
 
-
 export type CategoryName = keyof typeof allCategoriesData;

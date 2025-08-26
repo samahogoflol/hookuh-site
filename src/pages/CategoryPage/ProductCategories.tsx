@@ -1,19 +1,25 @@
-import { allCategoriesData } from "../../data/allCategoriesData";
-import { useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import type { Category } from "../../types/data";
 
-const Categories = () => {
-  const { slugs } = useParams();
-  const findRightWay = slugs?.split("/")[0];
-  const currentCategory = allCategoriesData.find((category) => category.slug === findRightWay);
+interface CategoriesProps {
+  categories?: Category[];
+}
+
+const Categories: React.FC<CategoriesProps> = ({ categories }) => {
+  const location = useLocation();
 
   return (
     <>
-      {currentCategory?.subcategories?.map((i) => (
-        <div key={i.slug} className="flex hover:bg-gray-100 items-center cursor-pointer gap-3 mb-5 ml-3">
-          <img src={i.imgUrl} alt={i.title} width={45} />
-          <p>{i.title}</p>
-        </div>
-      ))}
+      {categories
+        ? categories.map((i) => (
+            <Link key={i.slug} to={`${location.pathname}/${i.slug}`}>
+              <div className="flex hover:bg-gray-100 items-center cursor-pointer gap-3 mb-5 ml-3">
+                <img src={i.imgUrl} alt={i.title} width={45} />
+                <p>{i.title}</p>
+              </div>
+            </Link>
+          ))
+        : null}
     </>
   );
 };

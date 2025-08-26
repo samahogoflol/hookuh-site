@@ -1,15 +1,17 @@
-import type { Category } from "../../types/data";
+import type { ContentBlock } from "../../types/data";
 import Delivery from "../../components/Delivery";
 
+
 interface ProductsDescriptionProps {
-  findRightCategory: Category;
+  description?: ContentBlock[];
 }
 
-const ProductsDescription: React.FC<ProductsDescriptionProps> = ({ findRightCategory }) => {
-  console.log(findRightCategory);
+const ProductsDescription: React.FC<ProductsDescriptionProps> = ({ description }) => {
+  const isDescription = description ? description : [];
+
   return (
     <>
-      {findRightCategory.description?.map((item, index) => (
+      {isDescription.map((item, index) => (
         <div key={index}>
           {item.imgUrl ? (
             <>

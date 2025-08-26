@@ -25,5 +25,5 @@ export const tabacco420Category: Category = {
   subcategories: [category420_40g, category420_100g, category420_250g],
   description: [totalDescriptionPage420],
   imgUrl: logo_420,
-  categoryName : "Тютюн 420(Чотири Двадцять)",
+  categoryName: "Тютюн 420(Чотири Двадцять)",
 };

@@ -1,14 +1,14 @@
 interface PaginationContainerProps {
   onLoadMore: () => void;
-  hasMoreOnCurrentPage: boolean;
+  hasMoreItemsToShow: boolean;
 }
 
-const PaginationContainer: React.FC<PaginationContainerProps> = ({ onLoadMore, hasMoreOnCurrentPage }) => {
+const PaginationContainer: React.FC<PaginationContainerProps> = ({ onLoadMore, hasMoreItemsToShow }) => {
   // const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (
     <>
-      {hasMoreOnCurrentPage ? (
+      {hasMoreItemsToShow ? (
         <div>
           <button onClick={onLoadMore} className="w-50 h-8 border rounded border-gray-400 hover:bg-gray-200 cursor-pointer">
             Показати ще 20 товарів

@@ -1,49 +1,75 @@
 import { allCategoriesData } from "../../data/allCategoriesData";
 import { useParams } from "react-router-dom";
-import usePagination from "../../customHooks/usePaginaton";
-
-import ProductsList from "./ProductList";
-import ProductsDescription from "./ProductsDescription";
-import Categories from "./ProductCategories";
 import Page404 from "../404";
-import Filters from "../../components/Filters";
-import PaginationContainer from "../../components/PaginationContainer";
+import CategoryLayout from "./CategoryLayout";
+
+import { usePagination } from "../../customHooks/usePaginaton";
 import type { Product } from "../../types/product";
 
 const CategoryPage = () => {
-  const { slugs } = useParams();
+  const { slugs, brand, weight, line } = useParams();
   const findRightCategory = allCategoriesData.find((item) => item.slug === slugs);
-  const { visibleItems, totalPages, currentPage, goToPage, onLoadMore, hasMoreOnCurrentPage, isLastPage } = usePagination<Product>(
-    findRightCategory?.products || [],
-    20
-  );
+  const findRightBrand = findRightCategory?.subcategories?.find((item) => item.slug === brand);
+  const findRightWeight = findRightBrand?.subcategories?.find((item) => item.slug === weight);
+  const findRightLine = findRightWeight?.subcategories?.find((item) => item.slug === line);
 
-  return (
-    <>
-      {findRightCategory ? (
-        <>
-          <h2 className="text-center mt-10 mb-5 text-3xl font-medium">{findRightCategory?.title}</h2>
-          <div className="grid grid-cols-[280px_1fr]">
-            <div>
-              <Filters />
-            </div>
-            <div>
-              <div className="grid grid-cols-4">
-                <Categories />
-              </div>
-              <div className="grid grid-cols-4">{visibleItems && <ProductsList visibleItems={visibleItems} />}</div>
-              <div className="flex flex-col items-center mt-5">
-                <PaginationContainer onLoadMore={onLoadMore} hasMoreOnCurrentPage={hasMoreOnCurrentPage} />
-              </div>
-            </div>
-          </div>
-          <div>{findRightCategory && <ProductsDescription findRightCategory={findRightCategory} />}</div>
-        </>
-      ) : (
-        <Page404 />
-      )}
-    </>
-  );
+  const { visibleItems, hasMoreItemsToShow, onLoadMore } = usePagination<Product>(findRightCategory?.products || [], 20);
+
+  if (findRightLine) {
+    return (
+      <>
+        <CategoryLayout
+          categories={findRightLine.subcategories}
+          visibleItems={findRightLine.products}
+          description={findRightLine.description}
+          title={findRightLine.title}
+          onLoadMore={onLoadMore}
+          hasMoreItemsToShow={hasMoreItemsToShow}
+        />
+      </>
+    );
+  } else if (findRightWeight) {
+    return (
+      <>
+        <CategoryLayout
+          categories={findRightWeight.subcategories}
+          visibleItems={findRightWeight.products}
+          description={findRightWeight.description}
+          title={findRightWeight.title}
+          onLoadMore={onLoadMore}
+          hasMoreItemsToShow={hasMoreItemsToShow}
+        />
+      </>
+    );
+  } else if (findRightBrand) {
+    return (
+      <>
+        <CategoryLayout
+          categories={findRightBrand.subcategories}
+          visibleItems={findRightBrand.products}
+          description={findRightBrand.description}
+          title={findRightBrand.title}
+          onLoadMore={onLoadMore}
+          hasMoreItemsToShow={hasMoreItemsToShow}
+        />
+      </>
+    );
+  } else if (findRightCategory) {
+    return (
+      <>
+        <CategoryLayout
+          categories={findRightCategory.subcategories}
+          visibleItems={findRightCategory.products}
+          description={findRightCategory.description}
+          title={findRightCategory.title}
+          onLoadMore={onLoadMore}
+          hasMoreItemsToShow={hasMoreItemsToShow}
+        />
+      </>
+    );
+  } else {
+    return <Page404 />;
+  }
 };
 
 export default CategoryPage;
