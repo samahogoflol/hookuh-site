@@ -13,14 +13,26 @@ const CategoryPage = () => {
   const findRightWeight = findRightBrand?.subcategories?.find((item) => item.slug === weight);
   const findRightLine = findRightWeight?.subcategories?.find((item) => item.slug === line);
 
-  const { visibleItems, hasMoreItemsToShow, onLoadMore } = usePagination<Product>(findRightCategory?.products || [], 20);
+  let currentCategory;
+
+  if (findRightLine) {
+    currentCategory = findRightLine;
+  } else if (findRightWeight) {
+    currentCategory = findRightWeight;
+  } else if (findRightBrand) {
+    currentCategory = findRightBrand;
+  } else if (findRightCategory) {
+    currentCategory = findRightCategory;
+  }
+
+  const { visibleItems, hasMoreItemsToShow, onLoadMore } = usePagination<Product>(currentCategory?.products || [], 20);
 
   if (findRightLine) {
     return (
       <>
         <CategoryLayout
           categories={findRightLine.subcategories}
-          visibleItems={findRightLine.products}
+          visibleItems={visibleItems}
           description={findRightLine.description}
           title={findRightLine.title}
           onLoadMore={onLoadMore}
@@ -33,7 +45,7 @@ const CategoryPage = () => {
       <>
         <CategoryLayout
           categories={findRightWeight.subcategories}
-          visibleItems={findRightWeight.products}
+          visibleItems={visibleItems}
           description={findRightWeight.description}
           title={findRightWeight.title}
           onLoadMore={onLoadMore}
@@ -46,7 +58,7 @@ const CategoryPage = () => {
       <>
         <CategoryLayout
           categories={findRightBrand.subcategories}
-          visibleItems={findRightBrand.products}
+          visibleItems={visibleItems}
           description={findRightBrand.description}
           title={findRightBrand.title}
           onLoadMore={onLoadMore}
@@ -59,7 +71,7 @@ const CategoryPage = () => {
       <>
         <CategoryLayout
           categories={findRightCategory.subcategories}
-          visibleItems={findRightCategory.products}
+          visibleItems={visibleItems}
           description={findRightCategory.description}
           title={findRightCategory.title}
           onLoadMore={onLoadMore}

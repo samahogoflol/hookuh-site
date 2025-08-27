@@ -20,5 +20,5 @@ export const category420_100g: Category = {
       products: [...lightLine100grProducts],
     },
   ],
-  description: [tabacco420Description100gr],
+  description: tabacco420Description100gr,
 };
