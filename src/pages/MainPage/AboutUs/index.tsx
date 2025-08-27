@@ -1,4 +1,4 @@
-import Acardion from "../Acardion";
+import Acardion from "../../../components/Acardion";
 
 const AboutUs = () => {
   return (

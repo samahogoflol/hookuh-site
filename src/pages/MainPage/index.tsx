@@ -1,10 +1,10 @@
-import ContactWithUs from "../../components/ContactWithUs";
-import FastSales from "../../components/FastSales";
-import MainSlider from "../../components/MainSlider";
-import NewGoodsSlider from "../../components/NewGoodsSlider";
-import OurProviders from "../../components/OurProviders";
-import AboutUs from "../../components/AboutUs";
-import Reviews from "../../components/Reviews";
+import ContactWithUs from "./ContactWithUs";
+import FastSales from "./FastSales";
+import MainSlider from "./MainSlider";
+import NewGoodsSlider from "./NewGoodsSlider";
+import OurProviders from "./OurProviders";
+import AboutUs from "./AboutUs";
+import Reviews from "./Reviews";
 import Delivery from "../../components/Delivery";
 
 const MainPage = () => {

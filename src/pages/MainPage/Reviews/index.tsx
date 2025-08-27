@@ -1,5 +1,6 @@
-import lirra_crazy_lemon_50gr_potekshy from "../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
-import ButtonBuy from "../Buttons/BtnAddItemToCart";
+import lirra_crazy_lemon_50gr_potekshy from "../../../imgs/tabaks/lirra/lirra_50_gr_usa_potekshy-.webp";
+import ButtonBuy from "../../../components/Buttons/BtnAddItemToCart";
+import BtnAddItemToCart from "../../../components/Buttons/BtnAddItemToCart";
 
 const Reviews = () => {
   return (
@@ -19,7 +20,6 @@ const Reviews = () => {
               ноу хау в центре кубика в виде сквозного отверстия это нечто.
             </span>
           </div>
-          <ButtonBuy />
         </div>
 
         <div className="grid grid-cols-2 shadow-2xl rounded-b-md p-10">
@@ -32,7 +32,6 @@ const Reviews = () => {
             </div>
             <span>Дякую за швидку доставку! Табак дуже класний!</span>
           </div>
-          <ButtonBuy />
         </div>
         <div className="grid grid-cols-2 shadow-2xl rounded-b-md p-10">
           <img src={lirra_crazy_lemon_50gr_potekshy} alt="" />
@@ -44,7 +43,6 @@ const Reviews = () => {
             </div>
             <span>Зламався через півроку,картридж міняла. Розчарована ...</span>
           </div>
-          <ButtonBuy />
         </div>
         <div className="grid grid-cols-2 shadow-2xl rounded-b-md p-10">
           <img src={lirra_crazy_lemon_50gr_potekshy} alt="" />
@@ -56,7 +54,6 @@ const Reviews = () => {
             </div>
             <span>Приятный ягодный вкус, без ментола. Отлично</span>
           </div>
-          <ButtonBuy />
         </div>
       </div>
 

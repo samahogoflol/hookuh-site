@@ -1,11 +1,11 @@
-import accessories from "../../imgs/icons/accessories.png";
-import actions from "../../imgs/icons/actions.png";
-import gidkost from "../../imgs/icons/gidkost.png";
-import kalian from "../../imgs/icons/kalian.png";
-import odnorazki from "../../imgs/icons/odnorazki.png";
-import tabak from "../../imgs/icons/tabak.png";
-import ugol from "../../imgs/icons/ugol.png";
-import enterArrowSmall from "../../imgs/icons/enter-arrow-small.png";
+import accessories from "../../../imgs/icons/accessories.png";
+import actions from "../../../imgs/icons/actions.png";
+import gidkost from "../../../imgs/icons/gidkost.png";
+import kalian from "../../../imgs/icons/kalian.png";
+import odnorazki from "../../../imgs/icons/odnorazki.png";
+import tabak from "../../../imgs/icons/tabak.png";
+import ugol from "../../../imgs/icons/ugol.png";
+import enterArrowSmall from "../../../imgs/icons/enter-arrow-small.png";
 
 const FastSales = () => {
   return (

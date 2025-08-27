@@ -1,15 +1,14 @@
-import RoundedButton from "../Buttons/BtnRounded";
-import ButtonHeart from "../Buttons/BtnHeart";
-import BtnAddItemToCart from "../Buttons/BtnAddItemToCart";
-import DescriptionTable from "../DescriptionTable";
+import RoundedButton from "../../components/Buttons/BtnRounded";
+import ButtonHeart from "../../components/Buttons/BtnHeart";
+import BtnAddItemToCart from "../../components/Buttons/BtnAddItemToCart";
+import DescriptionTable from "../../components/DescriptionTable";
 
 import tovar from "../../imgs/vapeGoodsList/isparitel_lost_vape_ub_mini_1.0_om.webp";
 import guaranteeOfQuality from "../../imgs/icons/quality_guarantee.png";
 import discont from "../../imgs/icons/discont.jpg";
 import payment from "../../imgs/icons/payment.jpg";
 import delivery from "../../imgs/icons/delivery.png";
-import NewGoodsSlider from "../NewGoodsSlider";
-import { staticProducts } from "../../data/tabakContent";
+import NewGoodsSlider from "../MainPage/NewGoodsSlider";
 
 const productSinglePage = () => {
   return (

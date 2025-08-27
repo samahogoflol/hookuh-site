@@ -1,7 +1,7 @@
-import ButtonBuy from "../Buttons/BtnAddItemToCart";
 import { useForm, type SubmitHandler } from "react-hook-form";
-import type { IForm } from "../../types/form";
-import { validations } from "../../utils/constants";
+import { validations } from "../../../utils/constants";
+
+import type { IForm } from "../../../types/form";
 
 const FormContactPage: React.FC<IForm> = () => {
   const { register, handleSubmit, formState } = useForm<IForm>({
@@ -52,9 +52,7 @@ const FormContactPage: React.FC<IForm> = () => {
           placeholder="Повідомлення"
           minLength={10}
         ></textarea>
-        <div className="items-center">
-          <ButtonBuy />
-        </div>
+        <div className="items-center"></div>
       </form>
     </>
   );

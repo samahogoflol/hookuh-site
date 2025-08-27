@@ -1,4 +1,4 @@
-import ForWholesalers from "../../components/ForWholesalers";
+import ForWholesalers from "./ForWholesalers";
 const ForWholesalersPage = () => {
   return (
     <>
