@@ -13,6 +13,7 @@ const Acardion: React.FC<AcardionProps> = ({ title, description }) => {
         </h2>
         <p>{description}</p>
       </section>
+      <h1></h1>
     </>
   );
 };

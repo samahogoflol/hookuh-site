@@ -11,6 +11,8 @@ import ContactsPage from "./pages/ContactsPage";
 import Page404 from "./pages/404";
 import PartnershipPage from "./pages/PartnershipPage";
 import ForWholesalersPage from "./pages/ForWholesalersPage";
+import BreadcrumbTrail from "./components/CurrentLocation";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <ScrollToTop />
           <Header />
           <CleverHeader />
+          <BreadcrumbTrail/>
 
           <Routes>
             <Route path="/" element={<MainPage />} />
